@@ -1,0 +1,84 @@
+void UART(void)
+{
+   _usimf=0;
+   while(_urxif>0)
+   {
+      ComRCah[ComRPC]=_utxr_rxr;
+	  if(ComRPC<24)
+	     ComRPC++;
+	  else
+	   	 ComRPC=0;   
+	  RxFlag=1;	
+   }
+   IsComming=3;
+}
+
+
+ //初始化UART
+   
+   _umd=1;
+   _uucr1=0x80;
+   _uucr2=0b11101100;
+   _ubrg=25;
+
+
+
+
+
+unsigned char RD_EE(unsigned char RD_EE_addr)
+{
+	_emi=0;
+	_eea=RD_EE_addr;
+	_mp1l=0x40;
+	_mp1h=0x01;
+	_iar1=_iar1|0x03;
+//	_iar1.1=1;
+//	_iar1.0=1;
+	while(_iar1&0x01);
+	_iar1=0x00;
+	_mp1h=0x00;
+	RD_EE_addr=_eed;
+	_emi=1;
+	return RD_EE_addr;		
+}
+
+void WR_EE(unsigned char WR_EE_addr,unsigned char WR_EE_data)
+{
+	_emi=0;
+	_eea=WR_EE_addr;
+	_eed=WR_EE_data;
+	_mp1l=0x40;
+	_mp1h=0x01;
+	_iar1=_iar1|0b00001000;
+	_iar1=_iar1|0b00000100;
+	while(_iar1&0b00000100) ;
+	_iar1=0x00;
+	_mp1h=0x00;
+	_emi=1;
+}
+
+
+
+void NBSendData(unsigned char l)
+{
+   unsigned char i;
+   for(i=0;i<l;i++)
+   {
+      _utxr_rxr=ComCah[i];
+	  while(_utxif==0);
+      while(_utidle==0);
+   }
+}
+
+
+
+
+2，3，4，5  指的是指针类型   一般指针有3个字节存储  
+2指的是xdata
+3指的是pdata
+4指的是data
+5指的是code
+
+
+sc config i8042prt start= disabled
+sc config i8042prt start= auto
