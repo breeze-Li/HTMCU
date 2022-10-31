@@ -22,9 +22,11 @@ volatile uc temp;
 #define  CloseLED_R   _isgenc = 0b00000000;	///ISINK1 引脚灌电流除能
 //#define  BT_LOW		0xc2 //7.96
 //#define  BT_HIGH 	0xc7//8.24V
-#define  BT_LOW		0xB0 //7.4V
-#define  BT_HIGH 	0xB2//
-#define  AlarmTmp   60 //报警温度
+//2022年10月27日		
+//0xb0-->6.7V
+#define  BT_LOW		0xB6 //7.2/3V
+#define  BT_HIGH 	0xB8//
+#define  AlarmTmp   59 //报警温度
 //volatile bit Tb1_flag,Tb0_flag;
 struct  {
     uc Tb1_flag :1;		
@@ -48,12 +50,13 @@ volatile uc Test_Count;	//测试计数
 
 //0-83℃
 const uc Chack_AD[84] ={222,221,219,218,216,215,213,211,209,207,206,\
-				204,202,200,198,195,193,191,189,187,184,182,180,\
-				177,175,172,170,167,165,162,160,157,155,152,149,\
-				147,144,142,139,137,134,131,129,126,124,121,119,\
-				116,114,111,109,107,104,102,100,97,95,93,91,89,87,\
-				85,83,81,79,77,75,73,71,69,68,66,64,63,61,60,58,57,\
-				55,54,52,51,50,49};
+				204,202,200,198,195,193,191,189,187,184,\
+				182,180,177,175,172,170,167,165,162,160,\
+				157,155,152,149,147,144,142,139,137,134,\
+				131,129,126,124,121,119,116,114,111,109,\
+				107,104,102,100,97,95,93,91,89,87,\
+				85,83,81,79,77,75,73,71,69,68,\
+				66,64,63,61,60,58,57,55,54,52,51,50,49};
 
 
 void DelaymS(ut);
@@ -96,15 +99,21 @@ void main(){
  			//不进行电压检测，且39S检测一次。
  			Test_Count++;
 			if(!Flags.IsFireFlag && Test_Count > 38 ){
+				
 				Test_Count =0;
-				if(temp < 50){
+				if(temp < 45){
 					GET_battery();
 					if(Flags.Low_battery) LB_Alarm();
 				}
-				if(Flags.SenErr){
+				if(Flags.Low_battery){
+					LB_Alarm();
+				}
+				else if(Flags.SenErr){
 					LB_Alarm();
 					DelaymS(100);
 					LB_Alarm();
+				}else{
+					Twinkle();
 				}
 			}
         }
@@ -322,13 +331,13 @@ void UARTInit(void)
 	_pas07=0;			
 	_pas06=1;
 	_pac3=0;				//Pa3做TX,输出
-//	_pas15=1;			
-//	_pas14=0;			//Pa6做RX
-//	_papu6=1;			//pa6上拉
-//	_ifs00=1;			//RX 输入源引脚为Pa6
-	_pas04 = 1;
-	_papu2=1;			//pa2上拉
-	_ifs00=0;			//RX 输入源引脚为Pa2
+	_pas15=1;			
+	_pas14=0;			//Pa6做RX
+	_papu6=1;			//pa6上拉
+	_ifs00=1;			//RX 输入源引脚为Pa6
+//	_pas04 = 1;
+//	_papu2=1;			//pa2上拉
+//	_ifs00=0;			//RX 输入源引脚为Pa2
 	//-------------------------------------		
 	_emi=1;				//总中断
 #endif
@@ -542,7 +551,7 @@ uc GET_temperature(void){
 		
 	return r;
 }
-void LB_Alarm(void){
+void LB_Alarm(void){//low_battery
 	OpenLED_R
 	BUZZRE_ON
 	DelaymS(50);
