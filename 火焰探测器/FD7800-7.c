@@ -661,7 +661,7 @@ void Fire_Alarm(void){
 	_isgs0 = 0;
 	OpenLED				//亮灯
 	_papu1=1;			//上拉PA1
-	alarm_output=1;		//PA1输出1
+	alarm_output=1;		//PA1输出1 
 	while(1){
 		serial_communication();
 		GCC_CLRWDT();	
