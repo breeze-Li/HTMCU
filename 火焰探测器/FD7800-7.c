@@ -1,98 +1,98 @@
 ///C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\BIN
-//2021-9-8:ÊäÈë²¶»ñÍê³É,µ¥Æ¬»ú¿ÉÒÔ²¶»ñµ½×ÏÍâ¹ÜµÄÉÏÉıÑØÂö³å.
-//2021-9-9:½â¾ö×òÈÕµÄËÀÑ­»·ÎÊÌâ£¬¿ÉÍ¨¹ı´®¿Ú¶ÁÈ¡Ã¿ÃëÂö³åÊıÁ¿¡£
-//2021-9-11:ÕûºÏÍ¨Ñ¶Ğ­ÒéºÍÊäÈë²¶»ñ,ÏÂÒ»²½Í¨¹ıĞ­ÒéÊµÏÖ¹¦ÄÜ.
-//2021Äê9ÔÂ16ÈÕ:ÍêÉÆĞ´ÉèÖÃºÍ¶ÁÉèÖÃ,ÉèÖÃÊ©¼ÓµçÁ÷±£»¤.
-//2021Äê9ÔÂ28ÈÕ13:51:58:½«Ã¿(¶ş/Èı)ÃëµÄÂö³å×ÜºÍ×÷ÎªÒ»´ÎÊı¾İ·¢ËÍ.
-//2021Äê10ÔÂ9ÈÕ14:34:53:¿ª»ú¶ÁÈ¡EEµÄÉèÖÃÊı¾İ.(bitÊı¾İÀàĞÍ²»¿É¶¨ÒåÊ±³õÊ¼»¯.)
-//2021Äê10ÔÂ14ÈÕ:ÍêÉÆÅĞ¾İ¡£
-//2021Äê11ÔÂ15ÈÕ13:04:35:ÓÅ»¯ÅĞ¾İ,ÓĞÂö³å²Å¿ªÊ¼ÅĞ¶Ï,Ôö¼ÓÈİ´íÂÊ¡£
-//2021Äê11ÔÂ18ÈÕ£ºÓÃA0ºÍA2´úÌæÔ­À´µÄ´®¿Ú½ÓÁéÃô¶ÈÑ¡Ôñ¿ª¹Ø¡£(²»ÒªÖ±½Ó¶Á_pa,
-//				  ÒòÎª´®¿ÚÒ²ÊÇPa¿Ú,TxRx½ÓÉÏºó»á±ä»¯,Ö±½Ó¶ÁpaÒª»òÉÏ0,2Á½Î»¡£
-//				  ÓÉ´ËÉÕÂ¼Ê±²¦Âë¿ª¹Ø±ØĞëÈ«²¿²¦ÏÂ)
-//2021Äê11ÔÂ19ÈÕ:ÁéÃô¶ÈÑ¡ÔñÍê³É,ÖÁ´Ë,³ÌĞò»ù±¾Íê³É¡£
-//2022Äê2ÔÂ25ÈÕ£ºÌí¼ÓÊÙÃüµ½ÆÚ
-//2022Äê3ÔÂ31ÈÕ£ºÁĞ¶ÓĞÎÊ½ÅĞ¾İ£¨Ç°Ãæ¶¼´íÁË......£©
-//2022Äê6ÔÂ21ÈÕ£ºÄÚÖÃ³õÊ¼ÅĞ¾İ£¬Ê¡ÂÔµÚÒ»´Î±ê¶¨
-//2022Äê9ÔÂ30ÈÕ£º±¨¾¯ºóÀûÓÃgengral_array¼ÇÂ¼×îºó20ÃëÊı¾İ£¨¸´ÅÌ×Ô±¨Êı¾İ£©£¬²¢Ğ´ÈëEE£¬¼ÇÂ¼Ã¿ÖÖÁéÃô¶ÈµÄ±¨¾¯´¥·¢ÅĞ¾İ
+//2021-9-8:è¾“å…¥æ•è·å®Œæˆ,å•ç‰‡æœºå¯ä»¥æ•è·åˆ°ç´«å¤–ç®¡çš„ä¸Šå‡æ²¿è„‰å†².
+//2021-9-9:è§£å†³æ˜¨æ—¥çš„æ­»å¾ªç¯é—®é¢˜ï¼Œå¯é€šè¿‡ä¸²å£è¯»å–æ¯ç§’è„‰å†²æ•°é‡ã€‚
+//2021-9-11:æ•´åˆé€šè®¯åè®®å’Œè¾“å…¥æ•è·,ä¸‹ä¸€æ­¥é€šè¿‡åè®®å®ç°åŠŸèƒ½.
+//2021å¹´9æœˆ16æ—¥:å®Œå–„å†™è®¾ç½®å’Œè¯»è®¾ç½®,è®¾ç½®æ–½åŠ ç”µæµä¿æŠ¤.
+//2021å¹´9æœˆ28æ—¥13:51:58:å°†æ¯(äºŒ/ä¸‰)ç§’çš„è„‰å†²æ€»å’Œä½œä¸ºä¸€æ¬¡æ•°æ®å‘é€.
+//2021å¹´10æœˆ9æ—¥14:34:53:å¼€æœºè¯»å–EEçš„è®¾ç½®æ•°æ®.(bitæ•°æ®ç±»å‹ä¸å¯å®šä¹‰æ—¶åˆå§‹åŒ–.)
+//2021å¹´10æœˆ14æ—¥:å®Œå–„åˆ¤æ®ã€‚
+//2021å¹´11æœˆ15æ—¥13:04:35:ä¼˜åŒ–åˆ¤æ®,æœ‰è„‰å†²æ‰å¼€å§‹åˆ¤æ–­,å¢åŠ å®¹é”™ç‡ã€‚
+//2021å¹´11æœˆ18æ—¥ï¼šç”¨A0å’ŒA2ä»£æ›¿åŸæ¥çš„ä¸²å£æ¥çµæ•åº¦é€‰æ‹©å¼€å…³ã€‚(ä¸è¦ç›´æ¥è¯»_pa,
+//				  å› ä¸ºä¸²å£ä¹Ÿæ˜¯Paå£,TxRxæ¥ä¸Šåä¼šå˜åŒ–,ç›´æ¥è¯»paè¦æˆ–ä¸Š0,2ä¸¤ä½ã€‚
+//				  ç”±æ­¤çƒ§å½•æ—¶æ‹¨ç å¼€å…³å¿…é¡»å…¨éƒ¨æ‹¨ä¸‹)
+//2021å¹´11æœˆ19æ—¥:çµæ•åº¦é€‰æ‹©å®Œæˆ,è‡³æ­¤,ç¨‹åºåŸºæœ¬å®Œæˆã€‚
+//2022å¹´2æœˆ25æ—¥ï¼šæ·»åŠ å¯¿å‘½åˆ°æœŸ
+//2022å¹´3æœˆ31æ—¥ï¼šåˆ—é˜Ÿå½¢å¼åˆ¤æ®ï¼ˆå‰é¢éƒ½é”™äº†......ï¼‰
+//2022å¹´6æœˆ21æ—¥ï¼šå†…ç½®åˆå§‹åˆ¤æ®ï¼Œçœç•¥ç¬¬ä¸€æ¬¡æ ‡å®š
+//2022å¹´9æœˆ30æ—¥ï¼šæŠ¥è­¦ååˆ©ç”¨gengral_arrayè®°å½•æœ€å20ç§’æ•°æ®ï¼ˆå¤ç›˜è‡ªæŠ¥æ•°æ®ï¼‰ï¼Œå¹¶å†™å…¥EEï¼Œè®°å½•æ¯ç§çµæ•åº¦çš„æŠ¥è­¦è§¦å‘åˆ¤æ®
 
 #include "BA45F5542-2.h"
 
 typedef unsigned char uc;
 typedef unsigned int uint;
 
-#define  alarm_output  _pa1         /*±¨¾¯Êä³ö  io*/
-#define  pulse_input  _pa4          /*¼ì²âÂö³åÊäÈë*/
+#define  alarm_output  _pa1         /*æŠ¥è­¦è¾“å‡º  io*/
+#define  pulse_input  _pa4          /*æ£€æµ‹è„‰å†²è¾“å…¥*/
 
-#define  OpenLED	_isgenc |= 0b10000010; 		///ISINK1 Òı½Å¹àµçÁ÷Ê¹ÄÜ,50mA
-#define  CloseLED	 _isgenc &= 0b10000001;		///ISINK1 Òı½Å¹àµçÁ÷³ıÄÜ
-#define  ToggleLED	  _isgenc ^= 0b00000010;	///ISINK1 ·´×ª
-#define  OpenISINK0	   _isgenc |= 0b10000001;	///ISINK0 Òı½Å¹àµçÁ÷Ê¹ÄÜ
-#define  CloseISINK0	_isgenc &= 0b10000010;	///ISINK0 Òı½Å¹àµçÁ÷³ıÄÜ
+#define  OpenLED	_isgenc |= 0b10000010; 		///ISINK1 å¼•è„šçŒç”µæµä½¿èƒ½,50mA
+#define  CloseLED	 _isgenc &= 0b10000001;		///ISINK1 å¼•è„šçŒç”µæµé™¤èƒ½
+#define  ToggleLED	  _isgenc ^= 0b00000010;	///ISINK1 åè½¬
+#define  OpenISINK0	   _isgenc |= 0b10000001;	///ISINK0 å¼•è„šçŒç”µæµä½¿èƒ½
+#define  CloseISINK0	_isgenc &= 0b10000010;	///ISINK0 å¼•è„šçŒç”µæµé™¤èƒ½
 
-#define 	MIN_CURRENT	0X08					//µçÁ÷×îĞ¡Öµ
-#define		MAX_CURRENT 0X1F					//µçÁ÷×î´óÖµ
+#define 	MIN_CURRENT	0X08					//ç”µæµæœ€å°å€¼
+#define		MAX_CURRENT 0X1F					//ç”µæµæœ€å¤§å€¼
 
 #define     TYPE 0x12
 #define     VERSION 0x10
 
-//ÖĞ¶ÏÏòÁ¿
+//ä¸­æ–­å‘é‡
 DEFINE_ISR(UARTIQR, 0x10);
 DEFINE_ISR(STMAIQR, 0x2C);
 DEFINE_ISR(PTMAIQR, 0x24);
 
-//----------¹àµçÁ÷´óĞ¡Ñ¡Ôñ-----------------//
+//----------çŒç”µæµå¤§å°é€‰æ‹©-----------------//
 //nst unsigned int Hz[13]= {0x0e,0x10,0x11,0x12,0x13,0x14,0x16,0x18,0x19,0x1a,0x1c,0x1e,0x1f};
 							//300,328, 336, 340, 344,  352, 356,360, 368, 376, 380, 388, 394  V
-//const unsigned int sink_current_level[6]= {0x10,0x11,0x12,0x13,0x14,0x15};		//ISINK0 Òı½Å¹àµçÁ÷´óĞ¡
+//const unsigned int sink_current_level[6]= {0x10,0x11,0x12,0x13,0x14,0x15};		//ISINK0 å¼•è„šçŒç”µæµå¤§å°
 
-volatile unsigned char ComPC;		        //·¢ËÍÊı¾İÖ¸Õë
-volatile unsigned char ComCah[24];          //·¢ËÍ»º³åÇø
-volatile unsigned char ComRPC;		        //½ÓÊÕÊı¾İÖ¸Õë
-volatile unsigned char ComRCah[24];         //½ÓÊÕ»º´æ
-volatile unsigned char pointer_length;		//Ö¸Õë³¤¶È(¼ÇÂ¼½ÓÊÜµÄ×Ö½Ú³¤¶È)
-//----------Í³¼ÆÑ²¼ì³¤¶ÈÂö³å×ÜºÍ,Ã¿ÃëË¢ĞÂ-------------//
+volatile unsigned char ComPC;		        //å‘é€æ•°æ®æŒ‡é’ˆ
+volatile unsigned char ComCah[24];          //å‘é€ç¼“å†²åŒº
+volatile unsigned char ComRPC;		        //æ¥æ”¶æ•°æ®æŒ‡é’ˆ
+volatile unsigned char ComRCah[24];         //æ¥æ”¶ç¼“å­˜
+volatile unsigned char pointer_length;		//æŒ‡é’ˆé•¿åº¦(è®°å½•æ¥å—çš„å­—èŠ‚é•¿åº¦)
+//----------ç»Ÿè®¡å·¡æ£€é•¿åº¦è„‰å†²æ€»å’Œ,æ¯ç§’åˆ·æ–°-------------//
 #define inspection 5
 #define statistics 30
-volatile uc inspection_Array[inspection] = {0};	//Ñ²¼ìÊı×é£¨Ê±¼ä´°Âö³å×ÜÊı£©
-volatile uc statistics_Array[statistics] = {0};	//Í³¼ÆÊı×é(±¨¾¯ÅĞ¶Ï)
-volatile uc gengral_Array[20] = {0};	//ÆÕÍ¨Êı×é(¼ÇÂ¼×îºó30ÃëÊı¾İ£¬Ğ´ÈëEE)
-//volatile uc sampling_pointer;						//²éÑ¯²ÉÑùÖ¸Õë
-//volatile uc num_of_pulses_per_sec[15] = {0};//15ÃëÄÚÃ¿ÃëµÄÂö³å¸öÊı
+volatile uc inspection_Array[inspection] = {0};	//å·¡æ£€æ•°ç»„ï¼ˆæ—¶é—´çª—è„‰å†²æ€»æ•°ï¼‰
+volatile uc statistics_Array[statistics] = {0};	//ç»Ÿè®¡æ•°ç»„(æŠ¥è­¦åˆ¤æ–­)
+volatile uc gengral_Array[20] = {0};	//æ™®é€šæ•°ç»„(è®°å½•æœ€å30ç§’æ•°æ®ï¼Œå†™å…¥EE)
+//volatile uc sampling_pointer;						//æŸ¥è¯¢é‡‡æ ·æŒ‡é’ˆ
+//volatile uc num_of_pulses_per_sec[15] = {0};//15ç§’å†…æ¯ç§’çš„è„‰å†²ä¸ªæ•°
 
-volatile bit  receive_complete_flag;		//½ÓÊÕÍê³É±êÖ¾
-volatile bit  read_sampling_flag;			//¶Á²ÉÑù±êÖ¾
-volatile bit  set_complete_flag;			//Ğ´ÈëÉèÖÃÍê³É±êÖ¾
-volatile bit  trigger_flag;					//´¥·¢ÅĞ¾İ±êÖ¾
-volatile bit  fire_flag;					//»ğ¾¯±êÖ¾
-volatile bit  fire_flag1;					//»ğ¾¯±êÖ¾
-volatile bit  calibration_flag;				//±ê¶¨±êÖ¾
-volatile bit  gameover;						//ÉúÃüµ½ÆÚ
-volatile unsigned int LifeCount,LifeTimer;  //ÊÙÃü¼ÆÊ±£¬µ¥Î»£º12Ğ¡Ê±
-volatile unsigned char MyID[3];        		//²úÆ·ID
-volatile uc pulses_count=0;					//Âö³å¼ÆÊı
-volatile uc light_count=0;					//ÉÁµÆ¼ÆÊı
-volatile uc zero_pulses_count=0;			//Á¬ĞøÁãÂö³å¼ÆÊı
-volatile uc sensitivity_value=4;			//Ñ¡ÔñÁéÃô¶ÈÖµ£¨³õÊ¼»¯Îª0123Ö®ÍâµÄÖµ£©
-volatile uc sensitivity_value_old=4;		//Ñ¡ÔñÁéÃô¶È¾ÉÖµ£¨ÒÔ±ãÉÏµçÑ¡ÔñÁéÃô¶È£©
-volatile unsigned long temp;		        //ÁÙÊ±Êı¾İ
-//----------ÅĞ¾İ1  B¸ömÃëÊ±¼ä´°ÄÚÓĞA¸ömÃëÊ±¼ä´°µÄÂö³å×ÜÊı´óÓÚn---//
-volatile uc period=1;						//Ê±¼ä´°³¤¶È(m)
-volatile uc pulses_per_period=2;			//Ã¿Ê±¼ä´°ÄÚµÄÂö³å¸öÊı(n)
-volatile uc alarm_period=2;					//±¨¾¯µÄÊ±¼ä´°¸öÊı(A)
-volatile uc continuous_period=10;			//Á¬ĞøµÄÊ±¼ä´°¸öÊı(B)
-volatile uc period_count=0;					//Ê±¼ä´°³¤¶È¼ÆÊı
-volatile uc alarm_period_count=0;			//±¨¾¯µÄÊ±¼ä´°¼ÆÊı
-volatile uc continuous_period_count=0;		//Á¬ĞøµÄÊ±¼ä´°¼ÆÊı
-volatile uc continuous_period_count1=0;		//Á¬ĞøµÄÊ±¼ä´°¼ÆÊı1
-//----------ÅĞ¾İ2  ----------------------------//
-volatile uc count=0;						//ÅĞ¾İ2Ê±¼ä¼ÆÊı
-volatile uc total_pause =10;				//×ÜÂö³å
-volatile uc total_pause_time =15;				//×ÜÂö³å
-volatile uc total_pause_count =0;			//×ÜÂö³å¼ÆÊı
+volatile bit  receive_complete_flag;		//æ¥æ”¶å®Œæˆæ ‡å¿—
+volatile bit  read_sampling_flag;			//è¯»é‡‡æ ·æ ‡å¿—
+volatile bit  set_complete_flag;			//å†™å…¥è®¾ç½®å®Œæˆæ ‡å¿—
+volatile bit  trigger_flag;					//è§¦å‘åˆ¤æ®æ ‡å¿—
+volatile bit  fire_flag;					//ç«è­¦æ ‡å¿—
+volatile bit  fire_flag1;					//ç«è­¦æ ‡å¿—
+volatile bit  calibration_flag;				//æ ‡å®šæ ‡å¿—
+volatile bit  gameover;						//ç”Ÿå‘½åˆ°æœŸ
+volatile unsigned int LifeCount,LifeTimer;  //å¯¿å‘½è®¡æ—¶ï¼Œå•ä½ï¼š12å°æ—¶
+volatile unsigned char MyID[3];        		//äº§å“ID
+volatile uc pulses_count=0;					//è„‰å†²è®¡æ•°
+volatile uc light_count=0;					//é—ªç¯è®¡æ•°
+volatile uc zero_pulses_count=0;			//è¿ç»­é›¶è„‰å†²è®¡æ•°
+volatile uc sensitivity_value=4;			//é€‰æ‹©çµæ•åº¦å€¼ï¼ˆåˆå§‹åŒ–ä¸º0123ä¹‹å¤–çš„å€¼ï¼‰
+volatile uc sensitivity_value_old=4;		//é€‰æ‹©çµæ•åº¦æ—§å€¼ï¼ˆä»¥ä¾¿ä¸Šç”µé€‰æ‹©çµæ•åº¦ï¼‰
+volatile unsigned long temp;		        //ä¸´æ—¶æ•°æ®
+//----------åˆ¤æ®1  Bä¸ªmç§’æ—¶é—´çª—å†…æœ‰Aä¸ªmç§’æ—¶é—´çª—çš„è„‰å†²æ€»æ•°å¤§äºn---//
+volatile uc period=1;						//æ—¶é—´çª—é•¿åº¦(m)
+volatile uc pulses_per_period=2;			//æ¯æ—¶é—´çª—å†…çš„è„‰å†²ä¸ªæ•°(n)
+volatile uc alarm_period=2;					//æŠ¥è­¦çš„æ—¶é—´çª—ä¸ªæ•°(A)
+volatile uc continuous_period=10;			//è¿ç»­çš„æ—¶é—´çª—ä¸ªæ•°(B)
+volatile uc period_count=0;					//æ—¶é—´çª—é•¿åº¦è®¡æ•°
+volatile uc alarm_period_count=0;			//æŠ¥è­¦çš„æ—¶é—´çª—è®¡æ•°
+volatile uc continuous_period_count=0;		//è¿ç»­çš„æ—¶é—´çª—è®¡æ•°
+volatile uc continuous_period_count1=0;		//è¿ç»­çš„æ—¶é—´çª—è®¡æ•°1
+//----------åˆ¤æ®2  ----------------------------//
+volatile uc count=0;						//åˆ¤æ®2æ—¶é—´è®¡æ•°
+volatile uc total_pause =10;				//æ€»è„‰å†²
+volatile uc total_pause_time =15;				//æ€»è„‰å†²
+volatile uc total_pause_count =0;			//æ€»è„‰å†²è®¡æ•°
 //volatile uc total_time=0;
 
-//-----------´æ´¢µØÖ·¶¨Òå---------------------------//
+//-----------å­˜å‚¨åœ°å€å®šä¹‰---------------------------//
 /*
 0  1  2  3
 4  5  6
@@ -100,17 +100,17 @@ volatile uc total_pause_count =0;			//×ÜÂö³å¼ÆÊı
 12 13 14 15 16 17 18 19 1A 1B 1C 
 1D 1E 1F 20 01 22 23 24 25 26 27
 */
-#define IDAdd 0x00          //Éè±¸ID  H+M+L+Xor
-#define LifeHAdd 0x04	    //ÔËĞĞÊ±¼äµ¥Î»12Ğ¡Ê± H+L+Xor
-#define CALIBRATION_12M 0x07	    //12M±ê¶¨Êı¾İ(9¸öÅĞ¾İÊı¾İ,1¸öµçÁ÷Êı¾İ,1¸ö±êÖ¾Î»)
-#define CALIBRATION_17M 0x12	    //17M±ê¶¨Êı¾İ
-#define CALIBRATION_24M 0x1D	    //24M±ê¶¨Êı¾İ
-volatile uc CALIBRATION_ADD=CALIBRATION_12M;	//Ä¬ÈÏ¶ÁÉèÖÃµØÖ·
+#define IDAdd 0x00          //è®¾å¤‡ID  H+M+L+Xor
+#define LifeHAdd 0x04	    //è¿è¡Œæ—¶é—´å•ä½12å°æ—¶ H+L+Xor
+#define CALIBRATION_12M 0x07	    //12Mæ ‡å®šæ•°æ®(9ä¸ªåˆ¤æ®æ•°æ®,1ä¸ªç”µæµæ•°æ®,1ä¸ªæ ‡å¿—ä½)
+#define CALIBRATION_17M 0x12	    //17Mæ ‡å®šæ•°æ®
+#define CALIBRATION_24M 0x1D	    //24Mæ ‡å®šæ•°æ®
+volatile uc CALIBRATION_ADD=CALIBRATION_12M;	//é»˜è®¤è¯»è®¾ç½®åœ°å€
 
-#define ERROR 0x28	    //±êÖ¾
-#define DATA 0x2B		//30miaoÊı¾İ
+#define ERROR 0x28	    //æ ‡å¿—
+#define DATA 0x2B		//30miaoæ•°æ®
 
-//----------º¯ÊıÉùÃ÷------------------------//
+//----------å‡½æ•°å£°æ˜------------------------//
 
 void write_criteria(void);
 void select_sensitivity(void);
@@ -141,21 +141,21 @@ void Add_gengral(uc data);
 
 void main()
 {
-//-----------------±äÁ¿³õÊ¼»¯---------------------//
-	volatile uint z=0;					//1SÑ­»·¼ÆÓÃ
+//-----------------å˜é‡åˆå§‹åŒ–---------------------//
+	volatile uint z=0;					//1Så¾ªç¯è®¡ç”¨
 	volatile uc life[3]={0};
-	volatile uc i=0,j=0;					//ÅĞ¶Ï±¨¾¯ÊıÓÃ
-//----------³õÊ¼»¯-------------------------//
-	PTMInit();			//ÊäÈë²¶×½³õÊ¼»¯
-	StmAInit();			//³õÊ¼»¯STMA,ÓÃÓÚ´®¿Ú¶¨Ê±
-	UARTInit();			//´®¿Ú³õÊ¼»¯
+	volatile uc i=0,j=0;					//åˆ¤æ–­æŠ¥è­¦æ•°ç”¨
+//----------åˆå§‹åŒ–-------------------------//
+	PTMInit();			//è¾“å…¥æ•æ‰åˆå§‹åŒ–
+	StmAInit();			//åˆå§‹åŒ–STMA,ç”¨äºä¸²å£å®šæ—¶
+	UARTInit();			//ä¸²å£åˆå§‹åŒ–
 	MCUinit();
 	Twinkle();
-	DelaymS(200);		//ÑÓÊ±Ğ´ÈëÁéÃô¶È
+	DelaymS(200);		//å»¶æ—¶å†™å…¥çµæ•åº¦
 	Init_Criterion();
 	TestFlash();
 	while(1) {
-		if(set_complete_flag){//¶ÁÈ¡EEµÄÉèÖÃÊı¾İ
+		if(set_complete_flag){//è¯»å–EEçš„è®¾ç½®æ•°æ®
 			set_complete_flag=0;
 			SendByte(period);
 			SendByte(pulses_per_period);
@@ -167,17 +167,17 @@ void main()
 			clear_inspection_Array();
 		}
 		
-//----------·Ç±ê¶¨×´Ì¬ÏÂ¿ª¹Ø±ä»¯Ê±»òĞ´ÈëÉèÖÃÊ±Ñ¡ÔñÁéÃô¶È------------------//
+//----------éæ ‡å®šçŠ¶æ€ä¸‹å¼€å…³å˜åŒ–æ—¶æˆ–å†™å…¥è®¾ç½®æ—¶é€‰æ‹©çµæ•åº¦------------------//
 		if(!calibration_flag)
 			select_sensitivity();
 //------------------------------------------------------//
 
 		for(z=0; z < 50; z++){
-			//³ÖĞø1ÃëµÄÂö³å
-			OpenISINK0;			//´ò¿ªISINK0
-			GCC_DELAY(5);		//ÑÓÊ±5Î¢Ãî
-			CloseISINK0;		//¹Ø±ÕISINK0
-			GCC_DELAY(19995);	//ÑÓÊ±2495Î¢Ãî
+			//æŒç»­1ç§’çš„è„‰å†²
+			OpenISINK0;			//æ‰“å¼€ISINK0
+			GCC_DELAY(5);		//å»¶æ—¶5å¾®å¦™
+			CloseISINK0;		//å…³é—­ISINK0
+			GCC_DELAY(19995);	//å»¶æ—¶2495å¾®å¦™
 		}
 		
 		if(++LifeTimer > 43200) { //43200 12hours
@@ -185,7 +185,7 @@ void main()
 
             if(LifeCount <= 2160) { //2160 3years
                 LifeCount++;
-                //´æ´¢Ê±¼ä
+                //å­˜å‚¨æ—¶é—´
                 life[0] = LifeCount >> 8;
                 WR_EE(LifeHAdd, life[0]);
                 life[1] = LifeCount & 0xff;
@@ -197,7 +197,7 @@ void main()
         }
 		
 		if(++light_count>4){
-			//5ÃëÉÁµÆ£¬ÊÙÃüµ½ÆÚÉÁÁ½´Î
+			//5ç§’é—ªç¯ï¼Œå¯¿å‘½åˆ°æœŸé—ªä¸¤æ¬¡
 			if(gameover){
 				Twinkles(2);
 			}else {
@@ -208,7 +208,7 @@ void main()
 //			trigger_flag=1;
 		}
 		
-//----------±ê¶¨×´Ì¬ÏÂ´ò°ü·¢ËÍ-------------------//
+//----------æ ‡å®šçŠ¶æ€ä¸‹æ‰“åŒ…å‘é€-------------------//
 /*		SendByte(pulses_count);*/
 		if(calibration_flag){
 			SetPack();
@@ -220,29 +220,29 @@ void main()
 //--------------------------------------//
 	
 	
-	Add_gengral(pulses_count);//¼ÇÂ¼
-	/*----------´ÓÓĞÂö³å¿ªÊ¼´¥·¢ÅĞ¾İ-------------*/	
-	if (pulses_count){						//Èç¹ûÓĞÂö³å
+	Add_gengral(pulses_count);//è®°å½•
+	/*----------ä»æœ‰è„‰å†²å¼€å§‹è§¦å‘åˆ¤æ®-------------*/	
+	if (pulses_count){						//å¦‚æœæœ‰è„‰å†²
 		//SendByte(0x89);
-		zero_pulses_count=0;				//¼ÆÊıÇåÁã
-		trigger_flag=1;						//¿ªÊ¼´¥·¢ÅĞ¾İ
+		zero_pulses_count=0;				//è®¡æ•°æ¸…é›¶
+		trigger_flag=1;						//å¼€å§‹è§¦å‘åˆ¤æ®
 	}									
-	else if(trigger_flag){	 				//Èç¹ûÃ»ÓĞÂö³åÇÒÒÑ¾­´¥·¢ÅĞ¾İ
+	else if(trigger_flag){	 				//å¦‚æœæ²¡æœ‰è„‰å†²ä¸”å·²ç»è§¦å‘åˆ¤æ®
 		//SendByte(0x99);
-		//zero_pulses_count++;				//¼ÆÊı¼ÓÒ»
+		//zero_pulses_count++;				//è®¡æ•°åŠ ä¸€
 		if (++zero_pulses_count>30){
 			//SendByte(0x90);
-			zero_pulses_count=0;			//Á¬Ğø15ÃëÃ»ÓĞÂö³å
-			trigger_flag=0;					//È¡Ïû´¥·¢ÅĞ¾İ
-			//----------ÅĞ¾İ¼ÆÊıÇåÁã-----------------//
+			zero_pulses_count=0;			//è¿ç»­15ç§’æ²¡æœ‰è„‰å†²
+			trigger_flag=0;					//å–æ¶ˆè§¦å‘åˆ¤æ®
+			//----------åˆ¤æ®è®¡æ•°æ¸…é›¶-----------------//
 			period_count=0;
 			alarm_period_count=0;
 			continuous_period_count=0;
 			//continuous_period_count1=0;
 		}									
 	}	
-	if(trigger_flag && (!calibration_flag)){	//·Ç±ê¶¨×´Ì¬¿ªÊ¼´¥·¢ÅĞ¾İ
-		//ÅĞ¾İ2 nSÄÚÂö³å×ÜÊı
+	if(trigger_flag && (!calibration_flag)){	//éæ ‡å®šçŠ¶æ€å¼€å§‹è§¦å‘åˆ¤æ®
+		//åˆ¤æ®2 nSå†…è„‰å†²æ€»æ•°
 		
 		//Add_gengral(pulses_count);
 		if(++count < total_pause_time){
@@ -253,23 +253,23 @@ void main()
 				total_pause_count=0;
 		}
 		
-		//--------period_countÑ­»·-----------------//
+		//--------period_countå¾ªç¯-----------------//
 		period_count++;
 		period_count=period_count % period;
 		//-----------------------------------------//
-		temp = Add_Array(inspection_Array,pulses_count,period);//Ìí¼ÓÊı¾İ
+		temp = Add_Array(inspection_Array,pulses_count,period);//æ·»åŠ æ•°æ®
 		
-		//µ¥¸öÊ±¼ä´°Âú
+		//å•ä¸ªæ—¶é—´çª—æ»¡
 		if(period_count==0){
-			//---------continuous_period_countÑ­»·--------------//
+			//---------continuous_period_countå¾ªç¯--------------//
 			//continuous_period_count++;
 			//continuous_period_count=continuous_period_count%continuous_period;
 			
-			//Ê±¼ä´°×ÜÊı¼ÓÈëÍ³¼ÆÊı×é
+			//æ—¶é—´çª—æ€»æ•°åŠ å…¥ç»Ÿè®¡æ•°ç»„
 			Add_Array(statistics_Array, temp, continuous_period);
 			for(i=0; i<continuous_period; i++){
 				//SendByte(statistics_Array[i]);
-				//ÅĞ¶ÏÊ±¼ä´°Âö³åÊıÊÇ·ñ´ïµ½±¨¾¯Öµ,A+1
+				//åˆ¤æ–­æ—¶é—´çª—è„‰å†²æ•°æ˜¯å¦è¾¾åˆ°æŠ¥è­¦å€¼,A+1
 				if(statistics_Array[i] >= pulses_per_period){
 					alarm_period_count++;
 				};	
@@ -280,23 +280,23 @@ void main()
 		if(alarm_period_count >= alarm_period) {
 			fire_flag=1;
 		}else{
-			alarm_period_count=0;//Çå³ı±¨¾¯¼ÆÊı£¬²»È»»áÀÛ¼Ó
+			alarm_period_count=0;//æ¸…é™¤æŠ¥è­¦è®¡æ•°ï¼Œä¸ç„¶ä¼šç´¯åŠ 
 		}
 		if(fire_flag || fire_flag1) {
-			//¼ÇÂ¼±¨¾¯Çé¿ö
+			//è®°å½•æŠ¥è­¦æƒ…å†µ
 			j = (fire_flag<<4) + fire_flag1;
 			switch(sensitivity_value){
 			
-			case 3://S1=S2=0£¬12Ã×ÁéÃô¶È
+			case 3://S1=S2=0ï¼Œ12ç±³çµæ•åº¦
 					WR_EE(ERROR, j);break;
-			case 2://S1=1£¬S2=0£¬17Ã×ÁéÃô¶È
+			case 2://S1=1ï¼ŒS2=0ï¼Œ17ç±³çµæ•åº¦
 			case 1: 
 					WR_EE(ERROR+1, j);break;		
 			
-			case 0://S1=S2=1£¬24Ã×ÁéÃô¶È
+			case 0://S1=S2=1ï¼Œ24ç±³çµæ•åº¦
 					WR_EE(ERROR+2, j);break;
 			}
-			//¼ÇÂ¼20SÊı¾İ
+			//è®°å½•20Sæ•°æ®
 			for(i=0;i<20;i++){
 				WR_EE(DATA+i,gengral_Array[i]);
 				SendByte(gengral_Array[i]);
@@ -304,11 +304,11 @@ void main()
 			Fire_Alarm();
 		}
 
-//		//Á¬ĞøÊ±¼ä´°Âú(B),A¼ÆÊıÇåÁã
+//		//è¿ç»­æ—¶é—´çª—æ»¡(B),Aè®¡æ•°æ¸…é›¶
 //		if(continuous_period_count == 0 && period_count== 0 ){
-//			//ÔÚBÂú,ÇÒmÂúµÄÄÇÒ»ÃëÄ©ÇåÁã£¬ÒòÎªm´Ó1¿ªÊ¼¼ÆÊı£¬
-//			//ËùÒÔËùÓĞÊı¾İ¶¼ÏòºóÒÆ¶¯ÁËÒ»Î»¡£
-//			//Òò´ËÔÚBÂúµÄÏÂÒ»ÃëÇåÁã¡£ËùÒÔBºÍM¶¼ÎªÁã¡£
+//			//åœ¨Bæ»¡,ä¸”mæ»¡çš„é‚£ä¸€ç§’æœ«æ¸…é›¶ï¼Œå› ä¸ºmä»1å¼€å§‹è®¡æ•°ï¼Œ
+//			//æ‰€ä»¥æ‰€æœ‰æ•°æ®éƒ½å‘åç§»åŠ¨äº†ä¸€ä½ã€‚
+//			//å› æ­¤åœ¨Bæ»¡çš„ä¸‹ä¸€ç§’æ¸…é›¶ã€‚æ‰€ä»¥Bå’ŒMéƒ½ä¸ºé›¶ã€‚
 //			//++continuous_period_count1;
 //			//if(continuous_period_count1 == 4-period){ 
 //				//continuous_period_count1=0;
@@ -318,19 +318,19 @@ void main()
 //			//	}
 //		}
 	}
-		pulses_count=0;		   //Âö³åÊıÇåÁã
-		//serial_communication();//´®¿ÚÍ¨Ñ¶º¯Êı
+		pulses_count=0;		   //è„‰å†²æ•°æ¸…é›¶
+		//serial_communication();//ä¸²å£é€šè®¯å‡½æ•°
 		GCC_CLRWDT();
 	}	
 }
 
 void serial_communication(void){
-	//´®¿ÚÍ¨Ñ¶º¯Êı
+	//ä¸²å£é€šè®¯å‡½æ•°
 	volatile uc i,j,k;
 	if(receive_complete_flag) {
 		receive_complete_flag=0;
 		switch(1) {
-			//-------¼ì²éÊı¾İÍ·,´íÎó¾ÍÍË³ö---------//
+			//-------æ£€æŸ¥æ•°æ®å¤´,é”™è¯¯å°±é€€å‡º---------//
 		case 1:
 			if(ComRCah[0]!=0xcc) break;
 		case 2:
@@ -341,15 +341,15 @@ void serial_communication(void){
 			if(ComRCah[3]!=0xcc) break;
 			//--------------------------------------//
 		default:
-			if(pointer_length>=7 && pointer_length==ComRCah[4]+6) { //Ö¸Áî³¤¶ÈÕıÈ·
-				//----------Ö¸ÁîÒì»òĞ£Ñé----------------------------//
+			if(pointer_length>=7 && pointer_length==ComRCah[4]+6) { //æŒ‡ä»¤é•¿åº¦æ­£ç¡®
+				//----------æŒ‡ä»¤å¼‚æˆ–æ ¡éªŒ----------------------------//
 				j=ComRCah[4];
 				for(k=0; k<ComRCah[4]; k++)
 					j=j ^ ComRCah[5+k];
 				//----------------------------------------------//
-				if(j==ComRCah[ComRCah[4]+5]) {	//Ö¸ÁîĞ£ÑéÕıÈ·
-					switch(ComRCah[5]) {		//Ö¸ÁîÀàĞÍ
-					case 0x80:					//¶ÁÔÚÏß
+				if(j==ComRCah[ComRCah[4]+5]) {	//æŒ‡ä»¤æ ¡éªŒæ­£ç¡®
+					switch(ComRCah[5]) {		//æŒ‡ä»¤ç±»å‹
+					case 0x80:					//è¯»åœ¨çº¿
 						if(ComRCah[4]==1) {
 							SetPack();
 							ComCah[4]=1;
@@ -358,7 +358,7 @@ void serial_communication(void){
 							SendData(7);
 						}
 						break;
-					case 0x81:					//Ğ´ID
+					case 0x81:					//å†™ID
 						if(ComRCah[4]==4) {
 							ComRCah[9]=ComRCah[6]+ComRCah[7]+ComRCah[8];
 							WR_EE(IDAdd,ComRCah[6]);
@@ -373,7 +373,7 @@ void serial_communication(void){
 							SendData(7);
 						}
 						break;
-					case 0x84:					//¶ÁID
+					case 0x84:					//è¯»ID
 						if(ComRCah[4]==1) {
 							SetPack();
 							TestFlash();		
@@ -386,7 +386,7 @@ void serial_communication(void){
 							SendData(10);
 						}
 						break;
-					case 0x87:					//¶ÁÊ¹ÓÃÊ±¼ä
+					case 0x87:					//è¯»ä½¿ç”¨æ—¶é—´
 						if(ComRCah[4]==1) {
 							SetPack();
 							TestFlash();
@@ -398,13 +398,13 @@ void serial_communication(void){
 							SendData(9);
 						}
 						break;
-					case 0x88:					//Ğ´Ê¹ÓÃÊ±¼ä
+					case 0x88:					//å†™ä½¿ç”¨æ—¶é—´
 						if(ComRCah[4]==3) {
 							WR_EE(LifeHAdd,ComRCah[6]);
 							WR_EE(LifeHAdd+1,ComRCah[7]);
 							WR_EE(LifeHAdd+2,ComRCah[6]+ComRCah[7]);
 							TestFlash();
-							LifeTimer=0;		//Ã¿1S¼ÆÊ±ÇåÁã
+							LifeTimer=0;		//æ¯1Sè®¡æ—¶æ¸…é›¶
 							SetPack();
 							ComCah[4]=1;
 							ComCah[5]=0x88;
@@ -421,11 +421,11 @@ void serial_communication(void){
 							ComCah[8]=ComCah[7] ^ ComCah[6] ^ 0x8B;	//0x80=0x89^0x02
 							SendData(9);
 						}
-					case 0x90:					//ÉèÖÃ12MÁéÃô¶È
+					case 0x90:					//è®¾ç½®12Mçµæ•åº¦
 						if(ComRCah[4]==0x0B) {
 							CALIBRATION_ADD=CALIBRATION_12M;
 							WR_SET(CALIBRATION_ADD);
-							WR_EE(CALIBRATION_ADD+10, 1);	///Ğ´ÈëEE±êÖ¾
+							WR_EE(CALIBRATION_ADD+10, 1);	///å†™å…¥EEæ ‡å¿—
 							set_complete_flag=1;
 							TestFlash();
 							SetPack();
@@ -436,11 +436,11 @@ void serial_communication(void){
 							clear_inspection_Array();
 						}
 						break;
-					case 0x91:					//ÉèÖÃ17MÁéÃô¶È
+					case 0x91:					//è®¾ç½®17Mçµæ•åº¦
 						if(ComRCah[4]==0x0B) {
 							CALIBRATION_ADD=CALIBRATION_17M;
 							WR_SET(CALIBRATION_ADD);
-							WR_EE(CALIBRATION_ADD+10, 1);	///Ğ´ÈëEE±êÖ¾
+							WR_EE(CALIBRATION_ADD+10, 1);	///å†™å…¥EEæ ‡å¿—
 							set_complete_flag=1;
 							TestFlash();
 							SetPack();
@@ -451,11 +451,11 @@ void serial_communication(void){
 							clear_inspection_Array();
 						}
 						break;
-					case 0x92:					//ÉèÖÃ24MÁéÃô¶È
+					case 0x92:					//è®¾ç½®24Mçµæ•åº¦
 						if(ComRCah[4]==0x0B) {
 							CALIBRATION_ADD=CALIBRATION_24M;
 							WR_SET(CALIBRATION_ADD);
-							WR_EE(CALIBRATION_ADD+10, 1);	///Ğ´ÈëEE±êÖ¾
+							WR_EE(CALIBRATION_ADD+10, 1);	///å†™å…¥EEæ ‡å¿—
 							set_complete_flag=1;
 							TestFlash();
 							SetPack();
@@ -466,13 +466,13 @@ void serial_communication(void){
 							clear_inspection_Array();
 						}
 						break;
-						//----------ÈıÖÖÇé¿ö¾ùÎª¶ÁÉèÖÃ----------------//
+						//----------ä¸‰ç§æƒ…å†µå‡ä¸ºè¯»è®¾ç½®----------------//
 					case 0x93:
 					case 0x94:
 					case 0x95:
 						if(ComRCah[4]==0x01) {
 							switch(ComRCah[5]) {
-							//----------Ñ¡Ôñ¶ÁÄÄ¸öÁéÃô¶ÈµÄÉèÖÃ-----------------//
+							//----------é€‰æ‹©è¯»å“ªä¸ªçµæ•åº¦çš„è®¾ç½®-----------------//
 							case 0x93: CALIBRATION_ADD = CALIBRATION_12M;break;
 							case 0x94: CALIBRATION_ADD = CALIBRATION_17M;break;
 							case 0x95: CALIBRATION_ADD = CALIBRATION_24M;break;
@@ -481,7 +481,7 @@ void serial_communication(void){
 							SendData(17);
 						}
 						break;
-					case 0x97:				//µã»ğ
+					case 0x97:				//ç‚¹ç«
 						//clear_sampling_buff();
 						SendByte(0xFF);
 						SendByte(period);
@@ -497,11 +497,11 @@ void serial_communication(void){
 						SendByte(fire_flag);
 						SendByte(fire_flag1);
 						break;
-					case 0x96:				//¶Á²ÉÑù
+					case 0x96:				//è¯»é‡‡æ ·
 						if(ComRCah[4]==0x01) {
-							//½ÓÊÜµ½¶Á²ÉÑù±êÖ¾£¬ÇåÁã²ÉÑù»º³åÇø¡£µÈ´ı15¸öÊı¾İÂúÁËÖ®ºóÔÙ
-							//·¢ËÍ¸øÉÏÎ»»ú
-							read_sampling_flag=1;			//¶Á²ÉÑù±êÖ¾
+							//æ¥å—åˆ°è¯»é‡‡æ ·æ ‡å¿—ï¼Œæ¸…é›¶é‡‡æ ·ç¼“å†²åŒºã€‚ç­‰å¾…15ä¸ªæ•°æ®æ»¡äº†ä¹‹åå†
+							//å‘é€ç»™ä¸Šä½æœº
+							read_sampling_flag=1;			//è¯»é‡‡æ ·æ ‡å¿—
 							SetPack();
 							ComCah[4]=1;
 							ComCah[5]=0x96;
@@ -511,18 +511,18 @@ void serial_communication(void){
 //								ComCah[4]=16;
 //								ComCah[5]=0x96;
 //								ComCah[21]=0x96 ^ 16;
-//								//-----------²ÉÑùÊı¾İËÍÈë·¢ËÍ»º´æÇø---------------//
+//								//-----------é‡‡æ ·æ•°æ®é€å…¥å‘é€ç¼“å­˜åŒº---------------//
 //								for(i=0; i<15; i++) {
 //									ComCah[6+i] = num_of_pulses_per_sec[i];
 //									ComCah[21] ^= ComCah[6+i];
-//									//Çå³ı²ÉÑùÊı¾İ»º³åÇø
+//									//æ¸…é™¤é‡‡æ ·æ•°æ®ç¼“å†²åŒº
 //									num_of_pulses_per_sec[i] = 0xff;
 //									};
-//								SendData(22);			//·¢ËÍÊı¾İ	
+//								SendData(22);			//å‘é€æ•°æ®	
 //								//--------------------------------------//
 						}
 						break;
-					case 0x98 :				//¸´Î»
+					case 0x98 :				//å¤ä½
 						SetPack();
 						ComCah[4]=1;
 						ComCah[5]=0x98;
@@ -534,7 +534,7 @@ void serial_communication(void){
 						DelaymS(8000);
 						break;
 					case 0x99 :
-						calibration_flag=1;  //±ê¶¨±êÖ¾ÖÃÒ»
+						calibration_flag=1;  //æ ‡å®šæ ‡å¿—ç½®ä¸€
 						SetPack();
 						ComCah[4]=1;
 						ComCah[5]=0x99;
@@ -550,7 +550,7 @@ void serial_communication(void){
 						SendData(7);
 						break;
 					case 0x9b :
-						//±¨¾¯
+						//æŠ¥è­¦
 						for(i=0;i<20;i++){
 							SendByte(RD_EE(DATA+i));
 //							WR_EE(DATA+i,gengral_Array[i]);
@@ -564,20 +564,20 @@ void serial_communication(void){
 	}
 }
 
-//----------³õÊ¼»¯Ààº¯Êı----------------------//
+//----------åˆå§‹åŒ–ç±»å‡½æ•°----------------------//
 void MCUinit(void){
-	_wdtc=0b01010101;	///2Ãë
-	_scc=0x01;			///²»·ÖÆµ(ÏµÍ³Ê±ÖÓÎªfH)
+	_wdtc=0b01010101;	///2ç§’
+	_scc=0x01;			///ä¸åˆ†é¢‘(ç³»ç»Ÿæ—¶é’Ÿä¸ºfH)
 	_hircc=0x05;		///4M
-	while(_hircf==0);   //4MÊ±ÖÓ£¬²»·ÖÆµ
-	//----------¿ª¹ØÒı½Å-----------------//
-	_pac1=0;			//Êä³ö
+	while(_hircf==0);   //4Mæ—¶é’Ÿï¼Œä¸åˆ†é¢‘
+	//----------å¼€å…³å¼•è„š-----------------//
+	_pac1=0;			//è¾“å‡º
 	_pa1 = 0;
-	_pac2=1;			//ÊäÈë
+	_pac2=1;			//è¾“å…¥
 	_pac0=1;
-	_papu0=1;			//ÉÏÀ­
+	_papu0=1;			//ä¸Šæ‹‰
 	_papu2=1;
-	//----------¹àµçÁ÷·¢ÉúÆ÷----------------------//
+	//----------çŒç”µæµå‘ç”Ÿå™¨----------------------//
 	_isgdata1=0x00;
 	_isgdata0=0X0a;
 	_isgen=1;
@@ -599,59 +599,59 @@ void MCUinit(void){
 }
 void UARTInit(void)
 { 
-	//³õÊ¼»¯UART
-	_umd=1;				//×ö´®¿Ú
+	//åˆå§‹åŒ–UART
+	_umd=1;				//åšä¸²å£
 	_uucr1=0x80;
 	_uucr2=0b11101100;
-	_ubrg=25;			//4MÊ±ÖÓÊ±²¨ÌØÂÊ9600
+	_ubrg=25;			//4Mæ—¶é’Ÿæ—¶æ³¢ç‰¹ç‡9600
 
 	// --------------FD718-----------------
-   _pas06=1;			//PA3×öTX
-   _pas15=1;			//PA6×öRX
-   _papu6=0;			//pa6ÉÏÀ­
-   _ifs00=1;			//RX ÊäÈëÔ´Òı½ÅÎªPa6
+   _pas06=1;			//PA3åšTX
+   _pas15=1;			//PA6åšRX
+   _papu6=0;			//pa6ä¸Šæ‹‰
+   _ifs00=1;			//RX è¾“å…¥æºå¼•è„šä¸ºPa6
 	//-------------------------------------
-	_usime=1;			//USIMÖĞ¶ÏÊ¹ÄÜ
-	_emi=1;				//×ÜÖĞ¶Ï
+	_usime=1;			//USIMä¸­æ–­ä½¿èƒ½
+	_emi=1;				//æ€»ä¸­æ–­
 }
 
 void StmAInit(void)
 {
-	//³õÊ¼»¯STMA,ÓÃÓÚ´®¿Ú¶¨Ê±
-	_stmc0 = 0b01000000;//TIM0Ê±ÖÓ = fusb ; TIM0Ê±ÖÓ = 32kHz ;
-	_stmc1 = 0xc1;		//¶¨Ê±Æ÷Ä£Ê½¡¢±È½Ï¼ÆÊıÆ÷AÆ¥ÅäÇå0¼ÆÊıÆ÷(STMAÖĞ¶Ïºó¾Í²»ÓÃµ¥¶ÀÇå¼ÆÊıÆ÷ÁË) ¼ÆÊıÆ÷¼ÆÊıÒ»´ÎÎª(1/32k)S
-	_stmal = 64;		// 2ms¶¨Ê±
+	//åˆå§‹åŒ–STMA,ç”¨äºä¸²å£å®šæ—¶
+	_stmc0 = 0b01000000;//TIM0æ—¶é’Ÿ = fusb ; TIM0æ—¶é’Ÿ = 32kHz ;
+	_stmc1 = 0xc1;		//å®šæ—¶å™¨æ¨¡å¼ã€æ¯”è¾ƒè®¡æ•°å™¨AåŒ¹é…æ¸…0è®¡æ•°å™¨(STMAä¸­æ–­åå°±ä¸ç”¨å•ç‹¬æ¸…è®¡æ•°å™¨äº†) è®¡æ•°å™¨è®¡æ•°ä¸€æ¬¡ä¸º(1/32k)S
+	_stmal = 64;		// 2mså®šæ—¶
 	_stmah = 0;			//
 	
-	_stmae = 1;			//±È½Ï¼ÆÊıÆ÷AÆ¥ÅäÖĞ¶ÏÊ¹ÄÜ
-	_emi = 1;			//Ê¹ÄÜ×ÜÖĞ¶Ï
+	_stmae = 1;			//æ¯”è¾ƒè®¡æ•°å™¨AåŒ¹é…ä¸­æ–­ä½¿èƒ½
+	_emi = 1;			//ä½¿èƒ½æ€»ä¸­æ–­
 }
 
-void PTMInit(void) //ÊäÈë²¶»ñ³õÊ¼»¯
+void PTMInit(void) //è¾“å…¥æ•è·åˆå§‹åŒ–
 {
 	_pas10 = 0;
-	_pas11 = 0;		//PA4¸´ÓÃÎªPA4/PTCK
-	_pac4 = 1;		//ÊäÈë
-	_pa4 = 0;		//Ä¬ÈÏµÍµçÆ½
-	_papu4=0;		//³ıÄÜÉÏÀ­µç×è
+	_pas11 = 0;		//PA4å¤ç”¨ä¸ºPA4/PTCK
+	_pac4 = 1;		//è¾“å…¥
+	_pa4 = 0;		//é»˜è®¤ä½ç”µå¹³
+	_papu4=0;		//é™¤èƒ½ä¸Šæ‹‰ç”µé˜»
 
-	_ptmc0 = 0b00100000;//PIMÊ±ÖÓ = FH/16 = 4M/16;
-	_ptmc1 = 0b01000010;//²¶×½ÊäÈëÄ£Ê½,PTCK ÉÏÉıÑØÊäÈë²¶×½£¬¼ÆÊıÆ÷Öµ½«Ëø´æÖÁ CCRA
-	_ptmc2 = 0x00;//²¶×½ÊäÈëÄ£Ê½Ê±¼ÆÊıÆ÷ÇåÁãÌõ¼şÑ¡ÔñÎ»
+	_ptmc0 = 0b00100000;//PIMæ—¶é’Ÿ = FH/16 = 4M/16;
+	_ptmc1 = 0b01000010;//æ•æ‰è¾“å…¥æ¨¡å¼,PTCK ä¸Šå‡æ²¿è¾“å…¥æ•æ‰ï¼Œè®¡æ•°å™¨å€¼å°†é”å­˜è‡³ CCRA
+	_ptmc2 = 0x00;//æ•æ‰è¾“å…¥æ¨¡å¼æ—¶è®¡æ•°å™¨æ¸…é›¶æ¡ä»¶é€‰æ‹©ä½
 
-	_ptmae = 1;//±È½Ï¼ÆÊıÆ÷AÆ¥ÅäÖĞ¶ÏÊ¹ÄÜ
-	_emi = 1;//Ê¹ÄÜ×ÜÖĞ¶Ï
+	_ptmae = 1;//æ¯”è¾ƒè®¡æ•°å™¨AåŒ¹é…ä¸­æ–­ä½¿èƒ½
+	_emi = 1;//ä½¿èƒ½æ€»ä¸­æ–­
 
-	_pton = 1;//´ò¿ªPTM¶¨Ê±Æ÷
+	_pton = 1;//æ‰“å¼€PTMå®šæ—¶å™¨
 }
 
-//----------ÖĞ¶ÏÀàº¯Êı-----------------------//
+//----------ä¸­æ–­ç±»å‡½æ•°-----------------------//
 void UARTIQR(void)
 {
-	//½ÓÊÜÖĞ¶Ïº¯Êı
+	//æ¥å—ä¸­æ–­å‡½æ•°
 	//RxFlag=1;
 	_usimf=0;
-	_ston=1;				//´ò¿ª¶¨Ê±Æ÷
+	_ston=1;				//æ‰“å¼€å®šæ—¶å™¨
 	while(_urxif>0) {
 		ComRCah[ComRPC]=_utxr_rxr;
 		if(ComRPC<24)
@@ -659,36 +659,36 @@ void UARTIQR(void)
 		else
 			ComRPC=0;
 	}
-	//----------------ÇåÁã¶¨Ê±Æ÷------------
+	//----------------æ¸…é›¶å®šæ—¶å™¨------------
 	_ston=0;
-	GCC_DELAY(50);//Õâ¸öÑÓÊ±ºÜ¹Ø¼ü,ÎŞ´Ë²»¿ÉÇå³ı¼ÆÊıÆ÷
+	GCC_DELAY(50);//è¿™ä¸ªå»¶æ—¶å¾ˆå…³é”®,æ— æ­¤ä¸å¯æ¸…é™¤è®¡æ•°å™¨
 	_ston=1;
 	//--------------------------------------
 }
 
 void STMAIQR(void)
 {	
-	_stmaf=0;					//Çå³ıÖĞ¶Ï±êÖ¾
-	receive_complete_flag=1;	//´«ÊäÍê³É±êÖ¾ÖÃ1
-	pointer_length=ComRPC;		//¼ÇÂ¼Ö¸Õë³¤¶È
-	ComRPC=0;					//½ÓÊÜÖ¸ÕëÖÃÁã
-	_ston=0;					//¹Ø±ÕSTMA¼ÆÊıÆ÷
+	_stmaf=0;					//æ¸…é™¤ä¸­æ–­æ ‡å¿—
+	receive_complete_flag=1;	//ä¼ è¾“å®Œæˆæ ‡å¿—ç½®1
+	pointer_length=ComRPC;		//è®°å½•æŒ‡é’ˆé•¿åº¦
+	ComRPC=0;					//æ¥å—æŒ‡é’ˆç½®é›¶
+	_ston=0;					//å…³é—­STMAè®¡æ•°å™¨
 	serial_communication();
 }
 
 void PTMAIQR(void)
-{	//²¶×½µ½Âö³å
+{	//æ•æ‰åˆ°è„‰å†²
 	_ptmaf=0;
-	pulses_count++; //¼ÆÊı¼Ó1
+	pulses_count++; //è®¡æ•°åŠ 1
 }
 
-//----------Ò»°ã×Ô¶¨Òåº¯Êı---------------------//
+//----------ä¸€èˆ¬è‡ªå®šä¹‰å‡½æ•°---------------------//
 void Fire_Alarm(void){
-	//±¨¾¯
+	//æŠ¥è­¦
 	_isgs0 = 0;
-	OpenLED				//ÁÁµÆ
-	_papu1=1;			//ÉÏÀ­PA1
-	alarm_output=1;		//PA1Êä³ö1
+	OpenLED				//äº®ç¯
+	_papu1=1;			//ä¸Šæ‹‰PA1
+	alarm_output=1;		//PA1è¾“å‡º1
 	while(1){
 		serial_communication();
 		GCC_CLRWDT();	
@@ -696,7 +696,7 @@ void Fire_Alarm(void){
 }
 	
 void SetPack(void)
-{	//·¢ËÍÊı¾İÍ·
+{	//å‘é€æ•°æ®å¤´
 	ComCah[0]=0xcc;
 	ComCah[1]=0x99;
 	ComCah[2]=0x99;
@@ -704,14 +704,14 @@ void SetPack(void)
 }
 
 void SendByte(unsigned char l)
-{	//·¢ËÍ1¸ö×Ö½Ú
+{	//å‘é€1ä¸ªå­—èŠ‚
 	_utxr_rxr=l;
 	while(_utxif==0);
 	while(_utidle==0);
 }
 
 void SendData(unsigned char L)
-{	//·¢ËÍL¸ö×Ö½Ú
+{	//å‘é€Lä¸ªå­—èŠ‚
 	unsigned char i;
 	for(i=0; i<L; i++) {
 		_utxr_rxr=ComCah[i];
@@ -722,7 +722,7 @@ void SendData(unsigned char L)
 
 unsigned char RD_EE(unsigned char RD_EE_addr)
 {
-	//¶ÁEE
+	//è¯»EE
 	_emi=0;
 	_eea=RD_EE_addr;
 	_mp1l=0x40;
@@ -740,7 +740,7 @@ unsigned char RD_EE(unsigned char RD_EE_addr)
 
 void WR_EE(unsigned char WR_EE_addr,unsigned char WR_EE_data)
 {
-	//Ğ´EE
+	//å†™EE
 	_emi=0;
 	_eea=WR_EE_addr;
 	_eed=WR_EE_data;
@@ -755,24 +755,24 @@ void WR_EE(unsigned char WR_EE_addr,unsigned char WR_EE_data)
 }
 
 void RE_SET(volatile uc CALIBRATION_ADD,uc n)
-{	//¶ÁÉèÖÃÓÃ¡£²ÎÊı:´¢´æÉèÖÃµÄÊ×µØÖ·£¬Ö¸Áî±àºÅ¡£
+{	//è¯»è®¾ç½®ç”¨ã€‚å‚æ•°:å‚¨å­˜è®¾ç½®çš„é¦–åœ°å€ï¼ŒæŒ‡ä»¤ç¼–å·ã€‚
 	uc i;						//
-	SetPack();					//ÉèÖÃÍ·
-	ComCah[4] = 0X0b;			//Ö¸Áî±àºÅ
+	SetPack();					//è®¾ç½®å¤´
+	ComCah[4] = 0X0b;			//æŒ‡ä»¤ç¼–å·
 	ComCah[5] = n;
-	ComCah[16]=0x0B ^ n;		//Ğ£Ñé4 5Á½Î»
+	ComCah[16]=0x0B ^ n;		//æ ¡éªŒ4 5ä¸¤ä½
 	for(i=0; i<10; i++) {
-		ComCah[6+i] = RD_EE(CALIBRATION_ADD+i);		//µÚÁùÎ»¿ªÊ¼·ÅÖÃ¶ÁÈ¡µÄÊı¾İ
-		ComCah[16] ^= ComCah[6+i];					//¼ÌĞøĞ£Ñé6-10Î»
+		ComCah[6+i] = RD_EE(CALIBRATION_ADD+i);		//ç¬¬å…­ä½å¼€å§‹æ”¾ç½®è¯»å–çš„æ•°æ®
+		ComCah[16] ^= ComCah[6+i];					//ç»§ç»­æ ¡éªŒ6-10ä½
 	}
 }
 
 void WR_SET(volatile uc CALIBRATION_ADD){
-	//Ğ´ÈëÉèÖÃÓÃ¡£´¢´æÉèÖÃµÄÊ×µØÖ·
-	//Á¬ĞøĞ´Èë9¸öÉèÖÃ,µÚ10¸öµçÁ÷´óĞ¡ĞèÒªÅĞ¶Ï
+	//å†™å…¥è®¾ç½®ç”¨ã€‚å‚¨å­˜è®¾ç½®çš„é¦–åœ°å€
+	//è¿ç»­å†™å…¥9ä¸ªè®¾ç½®,ç¬¬10ä¸ªç”µæµå¤§å°éœ€è¦åˆ¤æ–­
 	WR_EE_LAST(CALIBRATION_ADD,6,9);
-	//µçÁ÷±£»¤
-	//--Èç¹ûµçÁ÷Ğ¡ÓÚ×îĞ¡Öµ,ÔòĞ´Èë×îĞ¡Öµ,´óÓÚ×î´óÖµ,Ğ´Èë×î´óÖµ,·ñÔòĞ´Èë±ê¶¨Öµ--//
+	//ç”µæµä¿æŠ¤
+	//--å¦‚æœç”µæµå°äºæœ€å°å€¼,åˆ™å†™å…¥æœ€å°å€¼,å¤§äºæœ€å¤§å€¼,å†™å…¥æœ€å¤§å€¼,å¦åˆ™å†™å…¥æ ‡å®šå€¼--//
 	if(ComRCah[15]<MIN_CURRENT) 
 		WR_EE(CALIBRATION_ADD+9,MIN_CURRENT);
 	else if(ComRCah[15]>MAX_CURRENT)
@@ -782,7 +782,7 @@ void WR_SET(volatile uc CALIBRATION_ADD){
 	}
 	
 void WR_EE_LAST(uc WR_EE_addr,uc DATA_addr,uc L)
-{	//Á¬ĞøĞ´£¬EEµØÖ·£¬ComRCahÖĞ´ıĞ´ÈëÊı¾İµÄµØÖ·£¬Ğ´Èë³¤¶È¡£
+{	//è¿ç»­å†™ï¼ŒEEåœ°å€ï¼ŒComRCahä¸­å¾…å†™å…¥æ•°æ®çš„åœ°å€ï¼Œå†™å…¥é•¿åº¦ã€‚
 	unsigned char i;
 	for(i=0; i<L; i++) {
 		WR_EE(WR_EE_addr+i,ComRCah[DATA_addr+i]);
@@ -790,7 +790,7 @@ void WR_EE_LAST(uc WR_EE_addr,uc DATA_addr,uc L)
 }
 
 void select_sensitivity(void){
-	//Ñ¡ÔñÁéÃô¶È¿ª¹ØÖµ
+	//é€‰æ‹©çµæ•åº¦å¼€å…³å€¼
 	sensitivity_value=_pa0+(_pa2<<1);
 
 	if(sensitivity_value != sensitivity_value_old){
@@ -802,19 +802,19 @@ void select_sensitivity(void){
 		 1		0		0		1		1 17M
 		 0		0		1		1		0 24M		*/
 
-		//S1=S2=0£¬12Ã×ÁéÃô¶È
+		//S1=S2=0ï¼Œ12ç±³çµæ•åº¦
 		case 3:
 				CALIBRATION_ADD=CALIBRATION_12M;
 				break;
-		//S1=1£¬S2=0£¬17Ã×ÁéÃô¶È
+		//S1=1ï¼ŒS2=0ï¼Œ17ç±³çµæ•åº¦
 		case 2:
 				CALIBRATION_ADD=CALIBRATION_17M;
 				break;
-		//S1=0£¬S2=1£¬17Ã×ÁéÃô¶È
+		//S1=0ï¼ŒS2=1ï¼Œ17ç±³çµæ•åº¦
 		case 1: 
 				CALIBRATION_ADD=CALIBRATION_17M;
 				break;		
-		//S1=S2=1£¬24Ã×ÁéÃô¶È
+		//S1=S2=1ï¼Œ24ç±³çµæ•åº¦
 		case 0:
 				CALIBRATION_ADD=CALIBRATION_24M;
 				break;
@@ -825,13 +825,13 @@ void select_sensitivity(void){
 }	
 
 void DelaymS(unsigned int t)
-{	//ÑÓÊ±Ò»ºÁÃë
+{	//å»¶æ—¶ä¸€æ¯«ç§’
 	volatile unsigned int c;
-	for(c=0; c<t; c++) GCC_DELAY(1000);///4MÊ±ÖÓ
+	for(c=0; c<t; c++) GCC_DELAY(1000);///4Mæ—¶é’Ÿ
 }
 
 void Twinkle(void)
-{	//ÉÁµÆ
+{	//é—ªç¯
 	OpenLED;
 	GCC_DELAY(5000);  //5mS
 	CloseLED;
@@ -846,20 +846,20 @@ void Twinkles(uc i){
 
 void TestFlash(void)
 {	uc i=2;
-	//È¡EEÊı¾İ
+	//å–EEæ•°æ®
 	unsigned char TempCah[10];
-	//È¡ID
+	//å–ID
 	MyID[0]=RD_EE(IDAdd);
 	MyID[1]=RD_EE(IDAdd+1);
 	MyID[2]=RD_EE(IDAdd+2);
 	TempCah[0]=RD_EE(IDAdd+3);
 	TempCah[1]=MyID[0] + MyID[1] + MyID[2];
-	if(TempCah[0]!=TempCah[1]) {			//Èç¹ûÃ»ÓĞĞ´ÈëID£¬Ôò¶Á³ö0 0 0
+	if(TempCah[0]!=TempCah[1]) {			//å¦‚æœæ²¡æœ‰å†™å…¥IDï¼Œåˆ™è¯»å‡º0 0 0
 		MyID[0]=0;
 		MyID[1]=0;
 		MyID[2]=0;
 	}
-	//È¡ÔËĞĞÊ±¼ä
+	//å–è¿è¡Œæ—¶é—´
 	TempCah[0]=RD_EE(LifeHAdd);
 	TempCah[1]=RD_EE(LifeHAdd+1);
 	TempCah[2]=RD_EE(LifeHAdd+2);
@@ -869,8 +869,8 @@ void TestFlash(void)
 		LifeCount=(LifeCount<<8)+TempCah[1];
 	} 
 	else LifeCount=0;
-	//ÉèÖÃÁéÃô¶È
-	//ÒÑ¾­±ê¶¨ÔòĞ´Èë,·ñÔòÁÁµÆ1ÃëÌáÊ¾¸ÃÁéÃô¶ÈÎ´±ê¶¨
+	//è®¾ç½®çµæ•åº¦
+	//å·²ç»æ ‡å®šåˆ™å†™å…¥,å¦åˆ™äº®ç¯1ç§’æç¤ºè¯¥çµæ•åº¦æœªæ ‡å®š
 	switch(CALIBRATION_ADD){
 		case 0x07://12M
 			if(1==RD_EE(0x11)){
@@ -905,7 +905,7 @@ void TestFlash(void)
 	}
 }
 
-void write_criteria(void){//Ğ´ÈëÅĞ¾İ
+void write_criteria(void){//å†™å…¥åˆ¤æ®
 		period=RD_EE(CALIBRATION_ADD);
 		pulses_per_period=RD_EE(CALIBRATION_ADD+1);
 		alarm_period=RD_EE(CALIBRATION_ADD+2);
@@ -914,17 +914,17 @@ void write_criteria(void){//Ğ´ÈëÅĞ¾İ
 		total_pause=RD_EE(CALIBRATION_ADD+4);
 		total_pause_time = RD_EE(CALIBRATION_ADD+5);
 	
-		//¸Ä±ä¾É¼üÖµ£¬ÓÃÓÚÏÂ¸öÑ­»·»Ö¸´²¦Âë¿ª¹ØµÄÁéÃô¶È
+		//æ”¹å˜æ—§é”®å€¼ï¼Œç”¨äºä¸‹ä¸ªå¾ªç¯æ¢å¤æ‹¨ç å¼€å…³çš„çµæ•åº¦
 		sensitivity_value_old=4;		
 }
 		
 void clear_inspection_Array(void){
-	//Çå³ıÑ²¼ìÊı×é
+	//æ¸…é™¤å·¡æ£€æ•°ç»„
 	uc i;
 	for(i=0; i< inspection; i++){
 		inspection_Array[i]=0x00;
 	}
-	//continuous_period_count=0;			//¼ÆÊıÇåÁã
+	//continuous_period_count=0;			//è®¡æ•°æ¸…é›¶
 	period_count=0;
 	for(i=0; i< statistics; i++){
 		statistics_Array[i]=0x00;
@@ -932,13 +932,13 @@ void clear_inspection_Array(void){
 }
 
 uc Add_Array(volatile uc *p, uc data, uc len){
-	//Êı×éÊı¾İÇ°ÒÆ,Ä©Î²Ìí¼Ódata.·µ»Ølen³¤¶È×ÜºÍ
+	//æ•°ç»„æ•°æ®å‰ç§»,æœ«å°¾æ·»åŠ data.è¿”å›lené•¿åº¦æ€»å’Œ
 	volatile uc i,num;
 	for(i=0,num=0; i<len-1; i++){
 		p[i]=p[i+1];
 		num = num+p[i];
 	}
-	//Ñ­»·Ö®ºói=len-1;¼´×îºóÒ»Î»
+	//å¾ªç¯ä¹‹åi=len-1;å³æœ€åä¸€ä½
 	p[i] = data;
 	num = num + data;
 	return num;
