@@ -1,14 +1,15 @@
-//Àîº£±ó
-//2022Äê8ÔÂ26ÈÕ£º´®¿Ú£¬int1ÖĞ¶Ï
-//2022Äê8ÔÂ28ÈÕ£ºADC
-//2022Äê8ÔÂ29ÈÕ£ºÎÂ¶È±í£¬µçÑ¹¼ì²â
-//2022Äê8ÔÂ30ÈÕ£º·äÃùÆ÷
-//2022Äê8ÔÂ31ÈÕ£ºµÍ¹¦ºÄ£¨9-10UA£©,»¥ÁªÊäÈëÊä³ö(ÓÉÓÚÃ¿¸ö²úÆ·²»Í¬²½£¬Òò´Ë²»»áÍË³ö±¨¾¯[ÒÑ½â¾ö])
-//2022Äê9ÔÂ1ÈÕ£º¾İÕÅÒªÇó£¬ÍêÉÆµÆ£¬Ö®Ç°ÊÇ×Ô¼ìÊ±°´¼üËÉ¿ªºó×ß´Ó»úÏß½áÊøÉùÒô£¬
-//				ÏÖÔÚÊÇ¼ì²âºÍÉùÒô·ÅÔÚÍ¬Ò»ÌõÏß²ÅÄÜÊµÏÖ£¬TB0³£¿ª£¬¹¦ºÄÔö¼Ó1UA
-//2022Äê9ÔÂ29ÈÕ£º¸ÄÓÃËü¼¤Ä£Ê½(5-7UA¡¾ĞİÃßÄ£Ê½(1.5)+ldo(3)+µçÑ¹²ÉÑù(0.5)=5UA¡¿)
-//				 [ĞèÒªºÏÀí´¦ÀíË¯Ãß¼°ÍË¾¯Ê±»ú£¬²»È»ÉùÒôÒì³£ -> ×Ô¼¤Ä£Ê½ÓÃÒı½Å¿ØÖÆ·äÃùÆ÷£¬Òı½ÅÔÚĞİÃßÊ±»á×Ô±£³Ö£¬ĞİÃßÊ±Ò²¿ÉÕı³£·¢Éù£¬Ëü¼¤Ä£Ê½ÓÃPWMĞÅºÅ¿ØÖÆ£¬ĞİÃßÊ±ÎŞPWM]
-//2022Äê11ÔÂ18ÈÕ£ºÔö¼ÓÍ¨Ñ¶Ğ­Òé£¬¿É±ê¶¨»ğ¾¯ÎÂ¶È¼°µçÑ¹ãĞÖµ
+//ææµ·æ–Œ
+//2022å¹´8æœˆ26æ—¥ï¼šä¸²å£ï¼Œint1ä¸­æ–­
+//2022å¹´8æœˆ28æ—¥ï¼šADC
+//2022å¹´8æœˆ29æ—¥ï¼šæ¸©åº¦è¡¨ï¼Œç”µå‹æ£€æµ‹
+//2022å¹´8æœˆ30æ—¥ï¼šèœ‚é¸£å™¨
+//2022å¹´8æœˆ31æ—¥ï¼šä½åŠŸè€—ï¼ˆ9-10UAï¼‰,äº’è”è¾“å…¥è¾“å‡º(ç”±äºæ¯ä¸ªäº§å“ä¸åŒæ­¥ï¼Œå› æ­¤ä¸ä¼šé€€å‡ºæŠ¥è­¦[å·²è§£å†³])
+//2022å¹´9æœˆ1æ—¥ï¼šæ®å¼ è¦æ±‚ï¼Œå®Œå–„ç¯ï¼Œä¹‹å‰æ˜¯è‡ªæ£€æ—¶æŒ‰é”®æ¾å¼€åèµ°ä»æœºçº¿ç»“æŸå£°éŸ³ï¼Œ
+//				ç°åœ¨æ˜¯æ£€æµ‹å’Œå£°éŸ³æ”¾åœ¨åŒä¸€æ¡çº¿æ‰èƒ½å®ç°ï¼ŒTB0å¸¸å¼€ï¼ŒåŠŸè€—å¢åŠ 1UA
+//2022å¹´9æœˆ29æ—¥ï¼šæ”¹ç”¨å®ƒæ¿€æ¨¡å¼(5-7UAã€ä¼‘çœ æ¨¡å¼(1.5)+ldo(3)+ç”µå‹é‡‡æ ·(0.5)=5UAã€‘)
+//				 [éœ€è¦åˆç†å¤„ç†ç¡çœ åŠé€€è­¦æ—¶æœºï¼Œä¸ç„¶å£°éŸ³å¼‚å¸¸ -> è‡ªæ¿€æ¨¡å¼ç”¨å¼•è„šæ§åˆ¶èœ‚é¸£å™¨ï¼Œå¼•è„šåœ¨ä¼‘çœ æ—¶ä¼šè‡ªä¿æŒï¼Œä¼‘çœ æ—¶ä¹Ÿå¯æ­£å¸¸å‘å£°ï¼Œå®ƒæ¿€æ¨¡å¼ç”¨PWMä¿¡å·æ§åˆ¶ï¼Œä¼‘çœ æ—¶æ— PWM]
+//2022å¹´11æœˆ18æ—¥ï¼šå¢åŠ é€šè®¯åè®®ï¼Œå¯æ ‡å®šç«è­¦æ¸©åº¦
+//2023å¹´2æœˆ1æ—¥ï¼šé‡‡ç”¨æ‰«é¢‘æ–¹å¼(3.1K-3.2K)/50Hz
 #include "BA45F5440.h"
 typedef unsigned char uc;
 typedef unsigned int ut;
@@ -22,15 +23,16 @@ volatile uc temp;
 #define  BUZZRE_OFF	{_pton = 0;_pa6 = 1;}
 #define  CONNECT_IN  _pa0
 #define  CONNECT_OUT _pa5
-#define  OpenLED_R    _isgenc |= 0b10000010;	///ISINK1 Òı½Å¹àµçÁ÷Ê¹ÄÜ,50mA
-#define  CloseLED_R   _isgenc = 0b00000000;	///ISINK1 Òı½Å¹àµçÁ÷³ıÄÜ
+#define  OpenLED_R    _isgenc |= 0b10000010;	///ISINK1 å¼•è„šçŒç”µæµä½¿èƒ½,50mA
+#define  CloseLED_R   _isgenc = 0b00000000;	///ISINK1 å¼•è„šçŒç”µæµé™¤èƒ½
+#define  SendDex(Dex) SendByte((((Dex%100)/10)<<4) + (Dex%10));
 //#define  BT_LOW		0xc2 //7.96
 //#define  BT_HIGH 	0xc7//8.24V
-//2022Äê10ÔÂ27ÈÕ		
-//0xb0-->6.7V(Î´¼ÓµçÈİ)
-#define  Def_BT_LOW		0xA7 //ÀíÂÛ7.2/3V£¬Êµ¼Ê7.1V
+//2022å¹´10æœˆ27æ—¥		
+//0xb0-->6.7V(æœªåŠ ç”µå®¹)
+#define  Def_BT_LOW		0xA7 //ç†è®º7.2/3Vï¼Œå®é™…7.1V
 #define  Def_BT_HIGH 	0xAA//7.4V
-#define  Def_AlarmTmp   59 //Ä¬ÈÏ±¨¾¯ÎÂ¶È
+#define  Def_AlarmTmp   60 //é»˜è®¤æŠ¥è­¦æ¸©åº¦
 #define  TempAdd	1	//
 #define  Temp_XOR	2
 #define  BT_LOWAdd  3
@@ -49,26 +51,28 @@ struct  {
     uc Int1_dwflag :1;
     uc Int1_upflag :1;		
     uc Low_battery:1;		
-    uc SenErr:1;	//´«¸ĞÆ÷¹ÊÕÏ	
-    uc IsFireFlag:1;//±¨¾¯
-    uc ExitFireFlag:1;//Ô¤ÍË¾¯ 9.29 ÓÃÓÚĞ­µ÷Á½ÌõÏßµÄÍË¾¯¹ı³Ì
+    uc SenErr:1;	//ä¼ æ„Ÿå™¨æ•…éšœ	
+    uc IsFireFlag:1;//æŠ¥è­¦
+    uc ExitFireFlag:1;//é¢„é€€è­¦ 9.29 ç”¨äºåè°ƒä¸¤æ¡çº¿çš„é€€è­¦è¿‡ç¨‹
     uc Buzzer:1;
-    uc Buzzer1:1;	//ÈıÉùÍê±Ï	
-    uc Communicating:1;	//ÕıÔÚÍ¨Ñ¶	
+    uc Buzzer1:1;	//ä¸‰å£°å®Œæ¯•	
+    uc Communicating:1;	//æ­£åœ¨é€šè®¯	
 }Flags;	//key_status
-volatile uc Master;//´íÎó¼ÆÊıM
-volatile uc SenErrCount;//´íÎó¼ÆÊı
-volatile uc TestCnt;	//±¨¾¯¼ÆÊı
-volatile uc BZ_Count;	//ÉùÒô¼ÆÊı
-volatile uc BZ_Count1;	//ÉùÒô¼ÆÊı
-volatile uc Test_Count;	//²âÊÔ¼ÆÊı
-//Í¨Ñ¶Ïà¹Ø
-volatile uc pointer_length;		//Ö¸Õë³¤¶È(¼ÇÂ¼½ÓÊÜµÄ×Ö½Ú³¤¶È)
-volatile uc ComRPC;		       	 //½ÓÊÕÊı¾İÖ¸Õë
-volatile uc ComRCah[15];         //½ÓÊÕ»º´æ
+volatile uc Master;//é”™è¯¯è®¡æ•°M
+volatile uc SenErrCount;//é”™è¯¯è®¡æ•°
+volatile uc TestCnt;	//æŠ¥è­¦è®¡æ•°
+volatile uc BZ_Count;	//å£°éŸ³è®¡æ•°
+volatile uc BZ_Count1;	//å£°éŸ³è®¡æ•°
+volatile uc Test_Count;	//æµ‹è¯•è®¡æ•°
+//é€šè®¯ç›¸å…³
+volatile uc pointer_length;		//æŒ‡é’ˆé•¿åº¦(è®°å½•æ¥å—çš„å­—èŠ‚é•¿åº¦)
+volatile uc ComRPC;		       	 //æ¥æ”¶æ•°æ®æŒ‡é’ˆ
+volatile uc ComRCah[15];         //æ¥æ”¶ç¼“å­˜
 volatile uc transfer_complete_flag;
 
-//0-83¡æ
+const ut Hz_H[3] = {323,317,313};//éœ€è¦constä¿®é¥°ï¼Œä¸ç„¶æ— æ³•ä½¿ç”¨
+const ut Hz_L[3] = {162,159,157};
+//0-83â„ƒ
 const uc Chack_AD[84] ={222,221,219,218,216,215,213,211,209,207,206,\
 						204,202,200,198,195,193,191,189,187,184,\
 						182,180,177,175,172,170,167,165,162,160,\
@@ -95,6 +99,7 @@ void LB_Alarm(void);
 void Stm0AInit(void);
 void Test_EE(void);
 void Com_Management(void);
+void SET_Pwm(uc i);
 
 void main(){
 	MCUINIT();
@@ -104,10 +109,10 @@ void main(){
 	Stm0AInit();
 	Test_EE();
 	while(1) {
-		/*Ö÷»ú×Ô¼ìºÍ»ğ¾¯*/
-		/*Ö÷»úÔÚ·¢Éù*/
-		/*´Ó»ú½ÓÊÕ×ÜÏß*/
-		/*Í¨Ñ¶*/
+		/*ä¸»æœºè‡ªæ£€å’Œç«è­¦*/
+		/*ä¸»æœºåœ¨å‘å£°*/
+		/*ä»æœºæ¥æ”¶æ€»çº¿*/
+		/*é€šè®¯*/
 		if( Flags.Int1_dwflag==0 &&  Flags.IsFireFlag ==0 && \
 			Flags.Buzzer == 0 && \
 			Flags.Interconnect ==0 &&\
@@ -120,9 +125,9 @@ void main(){
         if(Flags.Tb1_flag ) {
             Flags.Tb1_flag = 0;	
 			temp = GET_temperature();
-			//¼ì²â»ğ¾¯Ê±£¬NTC¼õĞ¡£¬»áÓ°ÏìµçÑ¹¼ì²â£¬Ê¹ÎÂ¶È>50¡ã£¬
- 			//²»½øĞĞµçÑ¹¼ì²â£¬ÇÒ39S¼ì²âÒ»´Î¡£
- 			//ÎÂ¶ÈÉı¸ß£¬µçÑ¹¼ì²â»áÏÂ½µ¡£ÔÚµçÑ¹¼à²âµã¼ÓÒ»µçÈİ¿É½â¾ö¡£
+			//æ£€æµ‹ç«è­¦æ—¶ï¼ŒNTCå‡å°ï¼Œä¼šå½±å“ç”µå‹æ£€æµ‹ï¼Œä½¿æ¸©åº¦>50Â°ï¼Œ
+ 			//ä¸è¿›è¡Œç”µå‹æ£€æµ‹ï¼Œä¸”39Sæ£€æµ‹ä¸€æ¬¡ã€‚
+ 			//æ¸©åº¦å‡é«˜ï¼Œç”µå‹æ£€æµ‹ä¼šä¸‹é™ã€‚åœ¨ç”µå‹ç›‘æµ‹ç‚¹åŠ ä¸€ç”µå®¹å¯è§£å†³ã€‚
  			Test_Count++;
 			if(!Flags.IsFireFlag && Test_Count > 38 ){
 				
@@ -143,49 +148,49 @@ void main(){
 				}
 			}
         }
-        //»ğ¾¯ºÍ×Ô¼ì¿ªÉùÒô£¨Ö÷´Ó±ØĞë·Ö¿ª£©
-        //Èç¹û¹«ÓÃ£¬ÎŞ·¨ÍË³ö±¨¾¯£¬(Ö÷´Ó½»ÌæÀ­¸ß×ÜÏß)
-        //Èç¹û¹«ÓÃÇÒÅĞ¶Ï»¥Áª×´Ì¬£¬Ö»ÄÜ»¥ÁªÒ»´Î£¨Ö÷»úµÚ¶ş´Î¼ì²â×ÜÏßÎª¸ßºó¾Í¹Øµô×ÜÏß£©
+        //ç«è­¦å’Œè‡ªæ£€å¼€å£°éŸ³ï¼ˆä¸»ä»å¿…é¡»åˆ†å¼€ï¼‰
+        //å¦‚æœå…¬ç”¨ï¼Œæ— æ³•é€€å‡ºæŠ¥è­¦ï¼Œ(ä¸»ä»äº¤æ›¿æ‹‰é«˜æ€»çº¿)
+        //å¦‚æœå…¬ç”¨ä¸”åˆ¤æ–­äº’è”çŠ¶æ€ï¼Œåªèƒ½äº’è”ä¸€æ¬¡ï¼ˆä¸»æœºç¬¬äºŒæ¬¡æ£€æµ‹æ€»çº¿ä¸ºé«˜åå°±å…³æ‰æ€»çº¿ï¼‰
 
-//    		if( Flags.IsFireFlag || Flags.Int1_dwflag || Flags.Interconnect){
-//				_tb0e = 1;	
-//				_tb0on = 1;
-//				Flags.Buzzer = 1;
-//    		}
-//				//Ö÷»ú¿ª×ÜÏß
-//				CONNECT_OUT =1;
-//				Master = 1;
-//			}else if( ){
-//				_tb0e = 1;	
-//				_tb0on = 1;
-//				Flags.Buzzer = 1;
-//				//´Ó»ú²»¿ª×ÜÏß
-//				CONNECT_OUT = 0;
-//				Master = 2;
-//			}
+//		if( Flags.IsFireFlag || Flags.Int1_dwflag || Flags.Interconnect){
+//			_tb0e = 1;	
+//			_tb0on = 1;
+//			Flags.Buzzer = 1;
+//		}
+//			//ä¸»æœºå¼€æ€»çº¿
+//			CONNECT_OUT =1;
+//			Master = 1;
+//		}else if( ){
+//			_tb0e = 1;	
+//			_tb0on = 1;
+//			Flags.Buzzer = 1;
+//			//ä»æœºä¸å¼€æ€»çº¿
+//			CONNECT_OUT = 0;
+//			Master = 2;
+//		}
         if(Flags.Tb0_flag){
         	Flags.Tb0_flag = 0;
-        	//»¥ÁªÊäÈë
+        	//äº’è”è¾“å…¥
         	if(!Master){
         		Flags.Interconnect = CONNECT_IN  ;
 	        	if( Flags.IsFireFlag || Flags.Int1_dwflag){
-	        		//Ö÷»ú¿ª×ÜÏß
+	        		//ä¸»æœºå¼€æ€»çº¿
 					CONNECT_OUT =1;
 					Master = 1;
 	        	}else if(Flags.Interconnect){
-	        		//´Ó»ú²»¿ª×ÜÏß
+	        		//ä»æœºä¸å¼€æ€»çº¿
 					CONNECT_OUT = 0;
 					Master = 2;
 	        	}
         	}
         	if(Master == 1){
-        		//Ö÷»ú
+        		//ä¸»æœº
         		switch(++BZ_Count){
-	        		case 1:BUZZRE_ON; Twinkle(); break ;
+	        		case 1:SET_Pwm(0); Twinkle(); break ;
 	        		case 2:BUZZRE_OFF; break ;
-	        		case 3:BUZZRE_ON; Twinkle(); break ;
+	        		case 3:SET_Pwm(1); Twinkle(); break ;
 	        		case 4:BUZZRE_OFF; break ;
-	        		case 5:BUZZRE_ON; Twinkle(); break ;
+	        		case 5:SET_Pwm(2); Twinkle(); break ;
 	        		case 6:BUZZRE_OFF; break ;
 	        		case 7: break ;
 					case 8: BZ_Count=0;
@@ -202,14 +207,14 @@ void main(){
 							break;
         		}
         	}
-        	//´Ó»ú
+        	//ä»æœº
         	if(Master == 2){
         		switch(++BZ_Count){
-	        		case 1:BUZZRE_ON; break ;
+	        		case 1:SET_Pwm(0); break ;
 	        		case 2:BUZZRE_OFF;break ;
-	        		case 3:BUZZRE_ON break ;
+	        		case 3:SET_Pwm(1); break ;
 	        		case 4:BUZZRE_OFF break ;
-	        		case 5:BUZZRE_ON break ;
+	        		case 5:SET_Pwm(2); break ;
 	        		case 6:BUZZRE_OFF break ;
 	        		case 7: break ;
 					case 8: BZ_Count=0;
@@ -227,10 +232,20 @@ void main(){
 	} 
 }
 
+void SET_Pwm(uc i){
+	//æ‰«é¢‘3100-3200
+	BUZZRE_OFF
+	_ptmal =	Hz_L[i];
+    _ptmah =	0;	   //DUTY=50%
+    _ptmrpl =	Hz_H[i] & 0xFF;
+    _ptmrph =	Hz_H[i] >> 8;	//PERIOD=3.2KHz
+    BUZZRE_ON
+}
+
 void Com_Management(void){
 	uc j=0, k=0;						
 	transfer_complete_flag=0;
-	if(ComRCah[0]==0xcc){	//±ê¶¨Í¨Ñ¶
+	if(ComRCah[0]==0xcc){	//æ ‡å®šé€šè®¯
 		if(pointer_length>=7){
 			j=ComRCah[4];
 		    for(k=0;k<ComRCah[4];k++)   
@@ -248,7 +263,7 @@ void Com_Management(void){
                	           SendByte(0x81);
                         }
                	        break;
-                   	 case 0x89:		//¶Á²ÉÑù
+                   	 case 0x89:		//è¯»é‡‡æ ·
                    	 	if(ComRCah[4]==1){
                    	 	   SendByte(0xcc);
                	           SendByte(0x99);
@@ -256,8 +271,9 @@ void Com_Management(void){
                	           SendByte(0xcc);
                	           SendByte(0x03);
                	           SendByte(0x86);
-               	           SendByte(temp);
-               	           SendByte(AlarmTmp);
+               	           SendDex(temp);
+               	           //SendByte((((Temp%100)/10)<<4) + (Temp%10));//
+               	           SendDex(AlarmTmp);
                	           SendByte(Battery_AD);
                	           SendByte(BT_LOW);
                	           SendByte(BT_HIGH);
@@ -268,7 +284,7 @@ void Com_Management(void){
                	           SendByte(j);
                    	 	}
                    	 	break;
-                   	 case 0x86:		//Ğ´ÎÂ¶È
+                   	 case 0x86:		//å†™æ¸©åº¦
                    	 	if(ComRCah[4]==4){
                    	 		WR_EE(TempAdd, ComRCah[6]);
                    	 		WR_EE(Temp_XOR, ComRCah[6] ^ 0xff);
@@ -283,7 +299,7 @@ void Com_Management(void){
                	           SendByte(0x86);
                	           SendByte(0x85);
                    	 	}break;
-                   	 case 0x87:		//»Ö¸´Ä¬ÈÏ
+                   	 case 0x87:		//æ¢å¤é»˜è®¤
                    	 	if(ComRCah[4]==1){
 /*                   	 		WR_EE(TempAdd, ComRCah[6]);*/
                    	 		WR_EE(Temp_XOR,0xff);
@@ -324,7 +340,7 @@ void MCUINIT(void){
     _scc = 0x01;
     _hircc = 0x05;
     while(_hircf == 0);
-	//----------ÇåÁã--------------------------//
+	//----------æ¸…é›¶--------------------------//
 	_mp0 = 0x80;
 	_acc = 128;
 	while(_acc != 0) {
@@ -345,57 +361,57 @@ void MCUINIT(void){
 	_iar1 = 0;
 	_mp1l = 128;
 	//--------------------------------------//
-	/*******½ğÃ«³õÊ¼»¯********/    
+	/*******é‡‘æ¯›åˆå§‹åŒ–********/    
 	_wdtc=0x57;
    
-    //Ê±»ù³õÊ¼»¯
+    //æ—¶åŸºåˆå§‹åŒ–
     _pscr = 2;		///32k
     _tb0c = 0x06;
-    _tb0e = 0;   //Ê±»ù0ÉèÖÃ0.5Ãë¶¨Ê±
+    _tb0e = 0;   //æ—¶åŸº0è®¾ç½®0.5ç§’å®šæ—¶
     _tb0e = 1;	
 	_tb0on = 1;
-    _tb1c = 0x07; //Ê±»ù1ÉèÖÃÎª1Ãë
+    _tb1c = 0x07; //æ—¶åŸº1è®¾ç½®ä¸º1ç§’
     _tb1e = 1;
 	_tb1on=1;
-	_emi=1;				//×ÜÖĞ¶Ï
+	_emi=1;				//æ€»ä¸­æ–­
 	
-	//----------ADCÒı½Å(µç³Ø)---------------------//
+	//----------ADCå¼•è„š(ç”µæ± )---------------------//
 	_pas17 = 1;//pa7->AN1
-	_pac7 = 1;//ÊäÈë
+	_pac7 = 1;//è¾“å…¥
 	_pas11 = 1;//pa4->AN0
-	_pac4 = 1;//ÊäÈë
-	//----------ADCÒı½Å(ÎÂ¶È)---------------------//
+	_pac4 = 1;//è¾“å…¥
+	//----------ADCå¼•è„š(æ¸©åº¦)---------------------//
 	_pbc4 = 0;
 	_pb4 = 1;
-	//----------ÆäËûÒı½Å--------------------//
+	//----------å…¶ä»–å¼•è„š--------------------//
 	_pac2 = 1;
 	_papu2 = 1;//PA2
 	_pa2 = 0;
-	//»¥ÁªÊäÈë
+	//äº’è”è¾“å…¥
 	_pac0 = 1;
 	_pa0 = 0;
-	//»¥ÁªÊä³ö
+	//äº’è”è¾“å‡º
 	_pac5 = 0;
 	_pa5 = 0;
 }
 
 void Int1init(void){
-	_pac1=1;	//ÊäÈë
+	_pac1=1;	//è¾“å…¥
 	_pa1 = 1;
-	_papu1=1;	//ÉÏÀ­
+	_papu1=1;	//ä¸Šæ‹‰
 	_pawu1 = 1;
 	/*INT0S1~INT0S0
-	00£º³ıÄÜ
-	01£ºÉÏÉıÑØ
-	10£ºÏÂ½µÑØ
-	11£ºË«ÑØ*/
+	00ï¼šé™¤èƒ½
+	01ï¼šä¸Šå‡æ²¿
+	10ï¼šä¸‹é™æ²¿
+	11ï¼šåŒæ²¿*/
 	_int1s1=1;
-	_int1s0=1;	//Ë«ÑØ
-	_int1e=1;	//Ê¹ÄÜint1
+	_int1s0=1;	//åŒæ²¿
+	_int1e=1;	//ä½¿èƒ½int1
 }
 
 void __attribute((interrupt(0x0c))) INT1(void){
-	//int0ÖĞ¶Ï
+	//int0ä¸­æ–­
 	_int1f=0;
 	if(_pa1==1){
 		Flags.Int1_upflag = 1;
@@ -406,67 +422,67 @@ void __attribute((interrupt(0x0c))) INT1(void){
 }
 
 void UART_PTPInit(uc i)
-{	//´®¿ÚºÍ·äÃùÆ÷Òı½Å³õÊ¼»¯
+{	//ä¸²å£å’Œèœ‚é¸£å™¨å¼•è„šåˆå§‹åŒ–
 
 	//#ifdef BUZZER
-		//----------·äÃùÆ÷---------------//
-		//×Ô¼¤Ä£Ê½
+		//----------èœ‚é¸£å™¨---------------//
+		//è‡ªæ¿€æ¨¡å¼
 	//	_pac3 = 1;_pac6 = 0;
 	//	_pa3 = 0; _pa6 = 1;
-		//Ëü¼¤Ä£Ê½
+		//å®ƒæ¿€æ¨¡å¼
 		_pac3 = 0;
 		_papu3 = 1;
 		_pa3 = 1;
 		_pas14 = 1;		//pa6 -> PTP
 		_pac6 = 0;
 		_pa6 = 1;
-		//·äÃùÆ¬Çı¶¯
-	    _ptmc0 =	0b00000000;	//ÉèÖÃ·ÖÆµ±È FSYS/4   4MÏµÍ³Ê±ÖÓ
-	    _ptmc1 =	0b10101000;	//PWMÍ¬Ïà¸ßÓĞĞ§Êä³ö
+		//èœ‚é¸£ç‰‡é©±åŠ¨
+	    _ptmc0 =	0b00000000;	//è®¾ç½®åˆ†é¢‘æ¯” FSYS/4   4Mç³»ç»Ÿæ—¶é’Ÿ
+	    _ptmc1 =	0b10101000;	//PWMåŒç›¸é«˜æœ‰æ•ˆè¾“å‡º
 	    _ptmc2 =	0b00000000;
 	    _ptmal =	0x9C;
 	    _ptmah =	0;	   //DUTY=50%
 	    _ptmrpl =	0x39;
 	    _ptmrph =	0x01;	//PERIOD=3.2KHz
 		
-	//	//³õÊ¼»¯UART,¿ª·äÃùÆ÷µÄ»°£¬Ö»ÄÜÓÃPA2×örx,ÎŞtx	
-	//	_umd=1;				//×ö´®¿Ú		
+	//	//åˆå§‹åŒ–UART,å¼€èœ‚é¸£å™¨çš„è¯ï¼Œåªèƒ½ç”¨PA2åšrx,æ— tx	
+	//	_umd=1;				//åšä¸²å£		
 	//	_uucr1=0b10000000;
 	//	_uucr2=0b11101100;
-	//	_ubrg=25;				//4MÊ±ÖÓÊ±²¨ÌØÂÊ9600
-//		_usime=1;				//USIMÖĞ¶ÏÊ¹ÄÜ
+	//	_ubrg=25;				//4Mæ—¶é’Ÿæ—¶æ³¢ç‰¹ç‡9600
+//		_usime=1;				//USIMä¸­æ–­ä½¿èƒ½
 //		_pas04 = 1;
-//		_papu2=1;			//pa2ÉÏÀ­
-//		_ifs00=0;			//RX ÊäÈëÔ´Òı½ÅÎªPa2
+//		_papu2=1;			//pa2ä¸Šæ‹‰
+//		_ifs00=0;			//RX è¾“å…¥æºå¼•è„šä¸ºPa2
 //		//-------------------------------------		
-//		_emi=1;				//×ÜÖĞ¶Ï
+//		_emi=1;				//æ€»ä¸­æ–­
 	
-		//³õÊ¼»¯UART	
-		_umd=1;				//×ö´®¿Ú		
+		//åˆå§‹åŒ–UART	
+		_umd=1;				//åšä¸²å£		
 		_uucr1=0b10000000;
 		_uucr2=0b11101100;
-		_ubrg=25;				//4MÊ±ÖÓÊ±²¨ÌØÂÊ9600
-		_usime=1;				//USIMÖĞ¶ÏÊ¹ÄÜ
+		_ubrg=25;				//4Mæ—¶é’Ÿæ—¶æ³¢ç‰¹ç‡9600
+		_usime=1;				//USIMä¸­æ–­ä½¿èƒ½
 		// --------------HD232-----------------
 		_pas07=0;			
 		_pas06=1;
 		_papu3=1;
-		_pac3=0;				//Pa3×öTX,Êä³ö
+		_pac3=0;				//Pa3åšTX,è¾“å‡º
 	//	_pas15=1;			
-	//	_pas14=0;			//Pa6×öRX
-	//	_papu6=1;			//pa6ÉÏÀ­
-	//	_ifs00=1;			//RX ÊäÈëÔ´Òı½ÅÎªPa6
+	//	_pas14=0;			//Pa6åšRX
+	//	_papu6=1;			//pa6ä¸Šæ‹‰
+	//	_ifs00=1;			//RX è¾“å…¥æºå¼•è„šä¸ºPa6
 		_pas04 = 1;
-		_papu2=1;			//pa2ÉÏÀ­
-		_ifs00=0;			//RX ÊäÈëÔ´Òı½ÅÎªPa2
+		_papu2=1;			//pa2ä¸Šæ‹‰
+		_ifs00=0;			//RX è¾“å…¥æºå¼•è„šä¸ºPa2
 		//-------------------------------------		
-		_emi=1;				//×ÜÖĞ¶Ï
+		_emi=1;				//æ€»ä¸­æ–­
 
 }
 
 uc RD_EE(unsigned char RD_EE_addr)
 {
-	//¶ÁEE
+	//è¯»EE
 	_emi=0;
 	_eea=RD_EE_addr;
 	_mp1l=0x40;
@@ -484,7 +500,7 @@ uc RD_EE(unsigned char RD_EE_addr)
 
 void WR_EE(unsigned char WR_EE_addr,unsigned char WR_EE_data)
 {
-	//Ğ´EE
+	//å†™EE
 	_emi=0;
 	_eea=WR_EE_addr;
 	_eed=WR_EE_data;
@@ -500,24 +516,24 @@ void WR_EE(unsigned char WR_EE_addr,unsigned char WR_EE_data)
 
 void Stm0AInit(void)
 {
-	//³õÊ¼»¯STM0A,ÓÃÓÚ´®¿Ú¶¨Ê±
-	_stmc0 = 0b01000000;		//TIM0Ê±ÖÓ = fusb ; TIM0Ê±ÖÓ = 32kHz ;
-	_stmc1 = 0b11000001;		//¶¨Ê±Æ÷Ä£Ê½¡¢±È½Ï¼ÆÊıÆ÷AÆ¥ÅäÇå0¼ÆÊıÆ÷(STMAÖĞ¶Ïºó¾Í²»ÓÃµ¥¶ÀÇå¼ÆÊıÆ÷ÁË) ¼ÆÊıÆ÷¼ÆÊıÒ»´ÎÎª(1/32k)S
-	_stmal = 96;				// 96 2ms¶¨Ê±
+	//åˆå§‹åŒ–STM0A,ç”¨äºä¸²å£å®šæ—¶
+	_stmc0 = 0b01000000;		//TIM0æ—¶é’Ÿ = fusb ; TIM0æ—¶é’Ÿ = 32kHz ;
+	_stmc1 = 0b11000001;		//å®šæ—¶å™¨æ¨¡å¼ã€æ¯”è¾ƒè®¡æ•°å™¨AåŒ¹é…æ¸…0è®¡æ•°å™¨(STMAä¸­æ–­åå°±ä¸ç”¨å•ç‹¬æ¸…è®¡æ•°å™¨äº†) è®¡æ•°å™¨è®¡æ•°ä¸€æ¬¡ä¸º(1/32k)S
+	_stmal = 96;				// 96 2mså®šæ—¶
 	_stmah = 0;				//
 
-	_stmae = 1;		//±È½Ï¼ÆÊıÆ÷AÆ¥ÅäÖĞ¶ÏÊ¹ÄÜ
-	_emi = 1;			//Ê¹ÄÜ×ÜÖĞ¶Ï
-	//_ston = 0;			//¹Ø±Õ¶¨Ê±Æ÷
+	_stmae = 1;		//æ¯”è¾ƒè®¡æ•°å™¨AåŒ¹é…ä¸­æ–­ä½¿èƒ½
+	_emi = 1;			//ä½¿èƒ½æ€»ä¸­æ–­
+	//_ston = 0;			//å…³é—­å®šæ—¶å™¨
 }
 void __attribute((interrupt(0x2c))) STMAIQR(void)
 //DEFINE_ISR(STMAIQR, 0x2c)
-{	//2ms¶¨Ê±ÅÜÍê
-	_stmaf=0;						//Çå³ıÖĞ¶Ï±êÖ¾
-	transfer_complete_flag=1;	//´«ÊäÍê³É±êÖ¾ÖÃ1
-	pointer_length=ComRPC;		//¼ÇÂ¼Ö¸Õë³¤¶È
-	ComRPC=0;					//½ÓÊÜÖ¸ÕëÖÃÁã
-	_ston=0;					//¹Ø±ÕSTM0A¼ÆÊıÆ÷
+{	//2mså®šæ—¶è·‘å®Œ
+	_stmaf=0;						//æ¸…é™¤ä¸­æ–­æ ‡å¿—
+	transfer_complete_flag=1;	//ä¼ è¾“å®Œæˆæ ‡å¿—ç½®1
+	pointer_length=ComRPC;		//è®°å½•æŒ‡é’ˆé•¿åº¦
+	ComRPC=0;					//æ¥å—æŒ‡é’ˆç½®é›¶
+	_ston=0;					//å…³é—­STM0Aè®¡æ•°å™¨
 	
 	Com_Management();
 	
@@ -529,7 +545,7 @@ void __attribute((interrupt(0x10))) UART(void)
 	Flags.Communicating = 1;
 	//WR_EE(1, temp);
 	
-	//½ÓÊÜÖĞ¶Ïº¯Êı
+	//æ¥å—ä¸­æ–­å‡½æ•°
 	/*	RxFlag=1;*/
 	while(_urxif>0) {
 		ComRCah[ComRPC]=_utxr_rxr;
@@ -538,7 +554,7 @@ void __attribute((interrupt(0x10))) UART(void)
 		else
 			ComRPC=0;
 	}
-	//----------------ÇåÁã¶¨Ê±Æ÷------------
+	//----------------æ¸…é›¶å®šæ—¶å™¨------------
 	_ston=0;
 	//GCC_DELAY(100);
 	_ston=1;
@@ -547,10 +563,10 @@ void __attribute((interrupt(0x10))) UART(void)
 
 void SendByte(unsigned char l)
 {
-	//·¢ËÍ1¸ö×Ö½Ú
+	//å‘é€1ä¸ªå­—èŠ‚
 	_utxr_rxr=l;
-	while(_utxif==0);//µÈ´ıÊı¾İ´Ó»º³åÆ÷¼ÓÔØµ½ÒÆÎ»¼Ä´æÆ÷ÖĞ
-	while(_utidle==0);//µÈ´ıÊı¾İ·¢ËÍÍê³É
+	while(_utxif==0);//ç­‰å¾…æ•°æ®ä»ç¼“å†²å™¨åŠ è½½åˆ°ç§»ä½å¯„å­˜å™¨ä¸­
+	while(_utidle==0);//ç­‰å¾…æ•°æ®å‘é€å®Œæˆ
 }
 void SendWord(unsigned long Word){
 	SendByte(Word >> 8);
@@ -569,7 +585,7 @@ void DelaymS(unsigned int t) {
         GCC_DELAY(1000);
 }
 /**
- * [__attribute description] 1S¶¨Ê±µ½
+ * [__attribute description] 1Så®šæ—¶åˆ°
  * @param void [description]
  */
 void __attribute((interrupt(0x30))) STB0(void) {
@@ -577,7 +593,7 @@ void __attribute((interrupt(0x30))) STB0(void) {
     Flags.Tb0_flag = 1;
 }
 /**
- * [__attribute description]0.5s¶¨Ê±µ½
+ * [__attribute description]0.5så®šæ—¶åˆ°
  * @param void [description]
  */
 void __attribute((interrupt(0x34))) STB1(void) {
@@ -588,28 +604,28 @@ void __attribute((interrupt(0x34))) STB1(void) {
 unsigned int GetADC(unsigned char c)
 {
    ut r=0;
-   unsigned long sum=0;		//4Æ½¾ùÓÃ£¬Á¿³ÌÉÔ´ó
+   unsigned long sum=0;		//4å¹³å‡ç”¨ï¼Œé‡ç¨‹ç¨å¤§
    uc i;
    //uc t1,t2;
    switch(c)
    {
       case 1:
          _sadc0=0b00000001;
-         _sadc1=0b00001010;       //AD¶¨Î»µ½AN1¡£ÎÂ¶È
+         _sadc1=0b00001010;       //ADå®šä½åˆ°AN1ã€‚æ¸©åº¦
          break;
       case 2:	
          _sadc0=0b00000000;
-         _sadc1=0b00001010;       //AD¶¨Î»µ½AN0.µç³Ø
+         _sadc1=0b00001010;       //ADå®šä½åˆ°AN0.ç”µæ± 
    	     break;
    	  default :
 //   	   _sadc0=0b00000100;
-//         _sadc1=0b00001010;       //AD¶¨Î»µ½AN4¡¢ÎÂ¶È
+//         _sadc1=0b00001010;       //ADå®šä½åˆ°AN4ã€æ¸©åº¦
    	  	 break;
    }
    
-   //E3 DE DB D9 D8 D7 D6 D6 µç³Ø
+   //E3 DE DB D9 D8 D7 D6 D6 ç”µæ± 
    _adcen=1;
-   for(i=0;i<4;i++){//4´ÎÆ½¾ù
+   for(i=0;i<4;i++){//4æ¬¡å¹³å‡
 	   
 	   _start=1;
 	   _start=0;
@@ -618,8 +634,8 @@ unsigned int GetADC(unsigned char c)
 //	   SendWord(_sadol);
 //	   SendWord(_sadoh<<4);
 //	   SendWord(_sadol>>4);
-/*ÎŞÂÛADRFSÎªºÎÖµ£¬_sadohÊ¼ÖÕÎª8Î»£¬_sadolÊ¼ÖÕÎª¸ß4Î»*/
-	   //r = (_sadoh<<4) + (_sadol>>4); //12Î»È«²¿È¡³ö
+/*æ— è®ºADRFSä¸ºä½•å€¼ï¼Œ_sadohå§‹ç»ˆä¸º8ä½ï¼Œ_sadolå§‹ç»ˆä¸ºé«˜4ä½*/
+	   //r = (_sadoh<<4) + (_sadol>>4); //12ä½å…¨éƒ¨å–å‡º
 	   r = _sadoh;
 	   sum += r;
    }
@@ -639,12 +655,12 @@ unsigned int GetADC(unsigned char c)
 }
 
 void GET_battery(void){
-	//µç³Ø£¬Êµ²âÎª3.53±¶7.79V->C5;9.65V->D7
+	//ç”µæ± ï¼Œå®æµ‹ä¸º3.53å€7.79V->C5;9.65V->D7
 	//ul tempAD;
 	Battery_AD = GetADC(2);
 //	tempAD = tempAD * 330;
 //	tempAD = tempAD / 255;
-//	tempAD = tempAD * 35;//·ÖÑ¹
+//	tempAD = tempAD * 35;//åˆ†å‹
 //	SendByte(tempAD >> 8);
 //	SendByte(tempAD & 0XFF );
 //	SendByte(((tempAD/1000)<<4) + ((tempAD%1000)/100));
@@ -658,7 +674,7 @@ void GET_battery(void){
 	
 }
 uc GET_temperature(void){
-	//ÎÂ¶È
+	//æ¸©åº¦
 	ut TempAD;
 	uc i,r;
 	_pb4 = 0;
@@ -673,9 +689,9 @@ uc GET_temperature(void){
 	if(TempAD >= 250 || TempAD <= 5){
 		SenErrCount=SenErrCount | 1;	
 		if(SenErrCount==255)
-			Flags.SenErr=1;               //´«¸ĞÆ÷¹ÊÕÏ
+			Flags.SenErr=1;               //ä¼ æ„Ÿå™¨æ•…éšœ
 	}
-	//È¡ÎÂ¶È
+	//å–æ¸©åº¦
    if(TempAD>Chack_AD[0])   
 		r=0;
    else
