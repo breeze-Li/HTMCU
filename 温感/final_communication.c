@@ -175,13 +175,34 @@ void main(){
         		Flags.Interconnect = CONNECT_IN  ;
 	        	if( Flags.IsFireFlag || Flags.Int1_dwflag){
 	        		//主机开总线
-					CONNECT_OUT =1;
-					Master = 1;
+					if(Flags.SenErr or Flags.Low_battery)
+						Master = 3;
+					else{
+						CONNECT_OUT =1;
+						Master = 1;
+					}
 	        	}else if(Flags.Interconnect){
 	        		//从机不开总线
 					CONNECT_OUT = 0;
 					Master = 2;
 	        	}
+        	}
+        	
+        	if(Master == 3){
+        		//故障
+        		BZ_Count %= 6;
+        		if(!BZ_Count){
+        			LB_Alarm();
+					DelaymS(100);
+					LB_Alarm();
+					DelaymS(100);
+					LB_Alarm();
+        		}
+        		if(Flags.Int1_upflag){
+    				Flags.Int1_dwflag =0;
+    				Master = 0;
+    			}
+    			BZ_Count++;
         	}
         	if(Master == 1){
         		//主机
